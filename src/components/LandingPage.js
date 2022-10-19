@@ -10,12 +10,12 @@ function LandingPage() {
   return (
     <>
       <section className="p-main-container">
+        <div className="p-connect-btn-main">
+          <button className="p-connect-btn">Connect Wallet</button>
+          <img src={topwave} alt="waves" className="p-top1-waves" />
+        </div>
         <section className="p-hero-main">
           <div className="d-hero">
-            <img src={topwave} alt="waves" className="p-top1-waves" />
-            <div className="p-connect-btn-main">
-              <button className="p-connect-btn">Connect Wallet</button>
-            </div>
             <video autoPlay loop muted className="p-middle-video">
               <source src={nftvideo} type="video/mp4" />
               <source src={nftvideo} type="video/ogg" />
@@ -24,7 +24,6 @@ function LandingPage() {
             <img src={topwave} alt="waves" className="p-top2-waves" />
           </div>
           <div className="bg-main">
-            <img src={bigbg} alt="background" className="p-bigbg" />
             <img src={circle1} alt="" className="p-circle1" />
             <img src={circle1} alt="" className="p-circle2" />
             <img src={abort1} alt="abort" className="p-abort-wave" />
