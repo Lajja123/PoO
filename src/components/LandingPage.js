@@ -3,36 +3,52 @@ import bigbg from "../assests/images/background.svg";
 import topwave from "../assests/images/top-waves.svg";
 import "../components/landingpage.css";
 import nftvideo from "../assests/video.mp4";
+import circle1 from "../assests/images/circle1.svg";
+import abort1 from "../assests/images/abortwave.svg";
 
 function LandingPage() {
   return (
     <>
       <section className="p-main-container">
         <section className="p-hero-main">
-          <div className="p-logo">
-            <img src="" alt="" />
-          </div>
-          <div className="p-connect">
-            <button className="d-connect-btn">Connect Wallet</button>
-          </div>
-
-          <div className="p-hero">
-            <img className="p-hero-top1-waves" src={topwave} alt="waves" />
-            <div className="p-hero-video">
-              <video
-                autoPlay
-                loop
-                width="100"
-                controls
-                className="p-middle-video"
-              >
-                <source src={nftvideo} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+          <div className="d-hero">
+            <img src={topwave} alt="waves" className="p-top1-waves" />
+            <div className="p-connect-btn-main">
+              <button className="p-connect-btn">Connect Wallet</button>
             </div>
-            <img className="p-hero-top2-waves" src={topwave} alt="waves" />
+            <video autoPlay loop muted className="p-middle-video">
+              <source src={nftvideo} type="video/mp4" />
+              <source src={nftvideo} type="video/ogg" />
+              Your browser does not support the video tag.
+            </video>
+            <img src={topwave} alt="waves" className="p-top2-waves" />
           </div>
-          <img className="p-hero-bg1" src={bigbg} alt="logo" />
+          <div className="bg-main">
+            <img src={bigbg} alt="background" className="p-bigbg" />
+            <img src={circle1} alt="" className="p-circle1" />
+            <img src={circle1} alt="" className="p-circle2" />
+            <img src={abort1} alt="abort" className="p-abort-wave" />
+            <img src={circle1} alt="" className="p-circle3" />
+            <img src={circle1} alt="" className="p-circle4" />
+            <span className="p-nft-content">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </span>
+            <div className="">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+
+              <div class="cabin"></div>
+              <div class="cabin"></div>
+              <div class="cabin"></div>
+              <div class="cabin"></div>
+              <div class="cabin"></div>
+              <div class="cabin"></div>
+            </div>
+          </div>
         </section>
       </section>
     </>
