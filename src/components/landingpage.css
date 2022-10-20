@@ -1,27 +1,87 @@
 .p-main-container {
   background-image: url("../assests/images/background.svg");
-
-  /* width: 100vw; */
   height: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.p-connect-btn-main {
-  z-index: 1;
-  position: absolute;
-  right: 0;
-  margin: 20px;
+.poo-second-section {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
 }
-.p-nft-content {
+.p-top1-waves {
   position: absolute;
   left: 0;
-  right: 0;
-  bottom: -90%;
-  font-size: 60pt;
-  text-align: center;
-  font-family: "JosefinSans";
+  top: -450px;
+  bottom: 0;
+  height: 75%;
+  width: 100%;
 }
 .p-middle-video {
   width: 100%;
+}
+.p-top2-waves {
+  position: relative;
+  left: 0;
+  transform: rotate(181deg);
+  top: -180px;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+}
+.p-circle1 {
+  position: relative;
+  width: 70rem;
+  transform: rotate(120deg);
+  left: -900px;
+  right: 0;
+  top: -700px;
+}
+.temp-svg {
+  position: relative;
+  right: -75%;
+  width: 65rem;
+  overflow: hidden;
+  top: -1800px;
+  z-index: 1;
+}
+.p-abort-wave {
+  position: absolute;
+  top: 1200px;
+  bottom: 0;
+  bottom: 0;
+  z-index: 1;
+  left: 0;
+}
+.p-circle3 {
+  position: absolute;
+  width: 15rem;
+  top: 1900px;
+  right: 1150px;
+}
+.p-circle4 {
+  position: absolute;
+  width: 15rem;
+  top: 2000px;
+  transform: rotate(150deg);
+  left: 1400px;
+}
+.p-nft-content {
+  position: relative;
+
+  text-align: center;
+  font-size: 3.5rem;
+  z-index: 100000 !important;
+  max-width: 60%;
+  word-wrap: break-word;
+  font-family: " Josefin Sans";
+  font-weight: 300;
+  color: #ffff;
+  margin: 0 auto;
+  top: -70px;
+}
+
+.bg-main {
+  min-height: 100vh;
 }
