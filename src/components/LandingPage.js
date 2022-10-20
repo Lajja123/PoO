@@ -6,6 +6,14 @@ import nftvideo from "../assests/video.mp4";
 import circle2 from "../assests/images/circle2.svg";
 import circle1 from "../assests/images/circle1.svg";
 import abort1 from "../assests/images/abortwave.svg";
+import img1 from "../assests/images/img1.svg";
+import img2 from "../assests/images/img2.svg";
+import img3 from "../assests/images/img3.svg";
+import img4 from "../assests/images/img4.svg";
+import img5 from "../assests/images/img5.svg";
+import img6 from "../assests/images/img6.svg";
+import img7 from "../assests/images/img7.svg";
+import img8 from "../assests/images/img8.svg";
 
 function LandingPage() {
   return (
@@ -39,20 +47,15 @@ function LandingPage() {
             <img src={circle1} alt="" className="p-circle3" />
             <img src={circle1} alt="" className="p-circle4" />
 
-            <div className="">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-
-              <div class="cabin"></div>
-              <div class="cabin"></div>
-              <div class="cabin"></div>
-              <div class="cabin"></div>
-              <div class="cabin"></div>
-              <div class="cabin"></div>
+            <div className="p-nfts-main">
+              <img src={img1} alt="" className="nfts p-img1" />
+              <img src={img2} alt="" className="nfts p-img2" />
+              <img src={img3} alt="" className="nfts p-img3" />
+              <img src={img4} alt="" className="nfts p-img4" />
+              <img src={img5} alt="" className="nfts p-img5" />
+              <img src={img6} alt="" className="nfts p-img6" />
+              <img src={img7} alt="" className="nfts p-img7" />
+              <img src={img8} alt="" className="nfts p-img8" />
             </div>
           </div>
         </section>
