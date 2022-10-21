@@ -14,6 +14,10 @@ import img5 from "../assests/images/img5.svg";
 import img6 from "../assests/images/img6.svg";
 import img7 from "../assests/images/img7.svg";
 import img8 from "../assests/images/img8.svg";
+import coin from "../assests/images/coin.svg";
+import certificate from "../assests/images/certificate.svg";
+import certiImg from "../assests/images/certificate-img.svg";
+import verify from "../assests/images/verify.svg";
 
 function LandingPage() {
   return (
@@ -56,6 +60,23 @@ function LandingPage() {
               <img src={img6} alt="" className="nfts p-img6" />
               <img src={img7} alt="" className="nfts p-img7" />
               <img src={img8} alt="" className="nfts p-img8" />
+            </div>
+
+            <div className="p-certificate-main">
+              <img src={coin} alt="" className="p-nft-coin" />
+              <img src={circle1} alt="" className="p-circle-5" />
+              <img src={certificate} alt="" className="p-nft-certificate" />
+              <img src={certiImg} alt="" className="p-nft-certificateImage" />
+            </div>
+
+            <div className="certi-title">Certificate Of Ownership</div>
+            <div className="p-certi-content">
+              <div>Nft was verified on</div>
+              <div>Verified By</div>
+            </div>
+            <div className="p-certi-content2">
+              <img src={verify} alt="" className="p-nft-verifify" />
+              <div>17/10/2022</div>
             </div>
           </div>
         </section>
