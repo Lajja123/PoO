@@ -75,8 +75,9 @@ function LandingPage() {
               <div>Verified By</div>
             </div>
             <div className="p-certi-content2">
+            <div className="p-certi-date">17/10/2022</div>
               <img src={verify} alt="" className="p-nft-verifify" />
-              <div>17/10/2022</div>
+              
             </div>
           </div>
         </section>
