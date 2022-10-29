@@ -1,0 +1,50 @@
+.p-signle-certi-main{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.nft-name{
+margin-right: 70%;
+border-bottom: 1px solid black;
+width: 100%;
+margin-top: 20px;
+}
+.p-single-certi-img{
+    width: 40%;
+}
+.p-single-certficate{
+    display: flex;
+    margin: 10%;
+    margin-top: 0;
+}
+.single-certi-info{
+    position: relative;
+    top: 100px;
+    text-align: justify;
+}
+.creation-single-certi-info{
+    position: relative;
+    top: 100px;
+    text-align: justify;
+    left: 45%;
+}
+.cetificate-name{
+    margin-right: 70%;
+    border-bottom: 1px solid black;
+    width: 100%;
+    margin-top: 20px;
+}
+.p-single-certificate-ownership{
+    border: 1px solid gray;
+   margin: 10%;
+    
+}
+.p-signle-certificate-content{
+    display: flex;
+     
+}
+.single-certi-info2{
+    position: relative;
+    top: 100px;
+    text-align: justify;
+}

@@ -6,6 +6,7 @@ import "../components/navbar.css"
 function Navbar(){
     return(
     <>
+    
     <div className="main-header">
         <div className="header-container">
             
@@ -39,6 +40,8 @@ function Navbar(){
           </div>
         </div>
       </div>
+      
+      
     </>
     )
 }
