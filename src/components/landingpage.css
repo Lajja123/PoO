@@ -18,7 +18,7 @@
 .p-top1-waves {
   position: absolute;
   left: 0;
-  top: -300px;
+  top: -400px;
   bottom: 0;
   height: 75%;
   width: 100%;
@@ -29,7 +29,7 @@
 .p-top2-waves {
   position: relative;
   left: 0;
-  transform: rotate(181deg);
+  transform: rotate(180deg);
   top: -150px;
   bottom: 0;
   width: 100%;
@@ -37,23 +37,23 @@
 }
 .p-circle1 {
   position: relative;
-    width: 50rem;
-    transform: rotate(120deg);
-    left: -600px;
-    right: 0;
-    top: -550px;
+  width: 70rem;
+  transform: rotate(120deg);
+  left: -500px;
+  right: 0;
+  top: -650px;
 }
 .temp-svg {
   position: relative;
-  right: -75%;
-  width: 50rem;
+  right: -80%;
+  width: 60rem;
   overflow: hidden;
-  top: -1350px;
+  bottom: 1800px;
   z-index: 1;
 }
 .p-abort-wave {
   position: absolute;
-  top: 800px;
+  top: 1000px;
   bottom: 0;
   bottom: 0;
   z-index: 1;
@@ -62,22 +62,22 @@
 .p-circle3 {
   position: absolute;
   width: 10rem;
-  top: 1250px;
-  right: 750px;
+  top: 1700px;
+  right: 1100px;
 }
 .p-circle4 {
   position: absolute;
-  width: 15rem;
-  top: 2000px;
+  width: 10rem;
+  top: 1900px;
   transform: rotate(150deg);
-  left: 1400px;
+  left: 1500px;
 }
 .p-nft-content {
   position: relative;
 
   text-align: center;
-  width: 40%;
-  font-size: 2rem;
+  width: 50%;
+  font-size: 3rem;
   z-index: 100000 !important;
   max-width: 50%;
   word-wrap: break-word;
@@ -85,7 +85,8 @@
   font-weight: 300;
   color: #ffff;
   margin: 0 auto;
-  top: -60px;
+  bottom: 100px;
+  word-spacing: 5px;
 }
 
 .bg-main {
@@ -102,7 +103,7 @@
 }
 
 .nfts:nth-of-type(1) {
-  left: 10%;
+  left: 5%;
   top: -20%;
 }
 .nfts:nth-of-type(2) {
@@ -114,7 +115,7 @@
   top: -20%;
 }
 .nfts:nth-of-type(4) {
-  left: 110%;
+  left: 115%;
   top: 10%;
 }
 .nfts:nth-of-type(5) {
@@ -131,9 +132,8 @@
   top: 50%;
 }
 .nfts:nth-of-type(8) {
-  right: 80%;
+  right: 90%;
   top: 15%;
-  
 }
 
 @keyframes wheel {
@@ -171,83 +171,84 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear; */
   z-index: 1;
-  top: 1000px;
-  left: 200px;
+  top: 1350px;
+  left: 400px;
 }
 .p-circle-5 {
-  width: 55rem;
+  width: 60rem;
   position: absolute;
-  top: 300%;
+  top: 280%;
   bottom: 0;
-  right: -240px;
+  right: -100px;
 }
 .p-nft-coin {
-  width: 50rem;
+  width: 60rem;
   position: absolute;
-  top: 250%;
+  top: 270%;
   bottom: 0;
   left: -150px;
 }
 .p-nft-certificate {
-  width: 65rem;
+  width: 85rem;
   height: 100%;
   position: absolute;
-  top: 255%;
+  top: 270%;
   bottom: 0;
   left: 250px;
 }
 .p-nft-certificateImage {
-  width: 20rem;
+  width: 30rem;
   position: absolute;
-  top: 280%;
-  left:25%;
+  top: 290%;
+  left: 20%;
 }
 .p-certi-content {
   display: flex;
   position: absolute;
-  top: 300%;
-  left: 55%;
-  justify-content: space-between;
+  top: 320%;
+  left: 50%;
+  justify-content: space-around;
   width: 30%;
   margin-top: 50px;
 }
-.p-certi-content2{
+.p-certi-content2 {
   display: flex;
   position: absolute;
-  top: 300%;
-  left: 55%;
-  justify-content: space-between;
+  top: 320%;
+  left: 50%;
+  justify-content: space-around;
   width: 30%;
   margin-top: 90px;
 }
-.p-connect-btn{
+.p-connect-btn {
   position: absolute;
   z-index: 1;
   right: 0;
   margin-top: 20px;
   margin-right: 20px;
 }
-.p-nft-verifify{
+.p-nft-verifify {
   width: 2rem;
-  padding-right: 20px;
+  /* padding-right: 25px; */
 }
-.p-certi-date{
-  padding-left: 20px;
+.p-certi-date {
+  /* padding-left: 20px; */
+  font-family: " Josefin Sans";
 }
 .certi-title {
   position: absolute;
   font-family: " Josefin Sans";
   text-transform: uppercase;
-  top: 280%;
+  top: 300%;
   width: 40%;
   color: #ffff;
-  right: 10%;
+  right: 15%;
   font-size: 3rem;
   word-spacing: 10px;
-  letter-spacing: 5px;line-height: 60px;
+  letter-spacing: 5px;
+  line-height: 60px;
 }
-.p-heroo-main{
+/* .p-heroo-main {
   overflow-x: hidden;
   overflow-y: auto;
-  
-}
+} */
