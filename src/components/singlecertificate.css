@@ -1,50 +1,104 @@
-.p-signle-certi-main{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+.p-signle-certi-main {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 10%;
 }
-.nft-name{
-margin-right: 70%;
-border-bottom: 1px solid black;
-width: 100%;
-margin-top: 20px;
+.nft-name {
+  margin-right: 70%;
+  border-bottom: 1px solid gray;
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 25%;
+  text-align: left;
 }
-.p-single-certi-img{
-    width: 40%;
+
+.p-single-certficate {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 5px #eff0ee;
 }
-.p-single-certficate{
-    display: flex;
-    margin: 10%;
-    margin-top: 0;
+.single-certi-info {
+  position: relative;
+  top: 150px;
+  left: 30px;
+  text-align: justify;
 }
-.single-certi-info{
-    position: relative;
-    top: 100px;
-    text-align: justify;
+.creation-single-certi-info {
+  position: relative;
+  top: 100px;
+  text-align: justify;
+  left: 45%;
 }
-.creation-single-certi-info{
-    position: relative;
-    top: 100px;
-    text-align: justify;
-    left: 45%;
+.cetificate-name {
+  margin-right: 70%;
+  border-bottom: 1px solid gray;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 25%;
+  text-align: left;
 }
-.cetificate-name{
-    margin-right: 70%;
-    border-bottom: 1px solid black;
-    width: 100%;
-    margin-top: 20px;
+.p-single-certificate-ownership {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 5px #eff0ee;
 }
-.p-single-certificate-ownership{
-    border: 1px solid gray;
-   margin: 10%;
-    
+.p-signle-certificate-content {
+  display: flex;
 }
-.p-signle-certificate-content{
-    display: flex;
-     
+.single-certi-info2 {
+  position: relative;
+  top: 200px;
+  left: 30px;
+  text-align: justify;
 }
-.single-certi-info2{
-    position: relative;
-    top: 100px;
-    text-align: justify;
+.singlecertificate-nfts-img4 {
+  width: 50%;
+  padding: 50px;
+}
+.p-section2-certificate {
+  margin-top: 10%;
+}
+.p-certificate {
+  margin-top: 10px;
+  font-size: 3rem;
+}
+
+/* ......................creation certificate css................... */
+
+.p-creation-certi-main {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+.p-creation-certficate {
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 5px #eff0ee;
+}
+.creation-certi-info {
+  position: relative;
+  margin: 0 auto;
+  text-align: justify;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.creation-nft-details {
+  margin-top: 20px;
+}
+.creation-date {
+  margin-top: 20px;
+}
+.creation-date2 {
+  margin-top: 5px;
 }

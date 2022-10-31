@@ -177,9 +177,9 @@
 .p-circle-5 {
   width: 60rem;
   position: absolute;
-  top: 280%;
+  top: 290%;
   bottom: 0;
-  right: -100px;
+  margin-left: 60%;
 }
 .p-nft-coin {
   width: 60rem;
@@ -194,7 +194,7 @@
   position: absolute;
   top: 270%;
   bottom: 0;
-  left: 250px;
+  margin-left: 10%;
 }
 .p-nft-certificateImage {
   width: 30rem;

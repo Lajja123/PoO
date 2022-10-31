@@ -64,7 +64,9 @@ function LandingPage() {
 
             <div className="p-certificate-main">
               <img src={coin} alt="" className="p-nft-coin" />
-              <img src={circle1} alt="" className="p-circle-5" />
+              <div className="p-circle-main">
+                <img src={circle1} alt="" className="p-circle-5" />
+              </div>
               <img src={certificate} alt="" className="p-nft-certificate" />
               <img src={certiImg} alt="" className="p-nft-certificateImage" />
             </div>
