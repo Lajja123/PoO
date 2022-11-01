@@ -3,14 +3,29 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "JosefinSans";
-  src: local("JosefinSans"),
+  font-family: "JosefinSans-Light";
+  src: local("JosefinSans-Light"),
     url("./assests/JosefinSans-Light.ttf") format("truetype");
+  font-weight: lighter;
 }
 @font-face {
-  font-family: "AquireLight";
-  src: local("AquireLight"),
+  font-family: "JosefinSans-ExtraLight";
+  src: local("JosefinSans-ExtraLight"),
+    url("./assests/JosefinSans-ExtraLight.ttf") format("truetype");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: "JosefinSans-Thin";
+  src: local("JosefinSans-Thin"),
+    url("./assests/JosefinSans-Thin.ttf") format("truetype");
+  font-weight: thin;
+}
+
+@font-face {
+  font-family: "AquireLight-YzE0o";
+  src: local("AquireLight-YzE0o"),
     url("./assests/AquireLight-YzE0o.otf") format("truetype");
+  font-weight: lighter;
 }
 
 body {

@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.font-face-gm {
+  font-family: "JosefinSans-Light";
+}
+.font-face-gm-extralight {
+  font-family: "JosefinSans-ExtraLight";
+}
+.font-face-gm-aqiure {
+  font-family: "AquireLight-YzE0o";
+}
+.font-face-gm-thin {
+  font-family: "JosefinSans-Thin";
+}

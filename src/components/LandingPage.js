@@ -24,7 +24,9 @@ function LandingPage() {
     <>
       <section className="p-main-container">
         <div className="p-navbar-main">
-          <button className="p-connect-btn">Connect Wallet</button>
+          <button className="p-connect-btn font-face-gm-aqiure">
+            Connect Wallet
+          </button>
           <img src={topwave} alt="waves" className="p-top1-waves" />
         </div>
         <div className="d-hero">
@@ -37,49 +39,47 @@ function LandingPage() {
 
         <section className="p-hero-main">
           <img src={topwave} alt="waves" className="p-top2-waves" />
-          <div className="bg-main">
-            <div className="p-nft-content">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit
-            </div>
-            <img src={circle1} alt="" className="p-circle1" />
-            <div className="temp-svg">
-              <img src={circle1} alt="" className="p-circle2" />
-            </div>
-            <img src={abort1} alt="abort" className="p-abort-wave" />
-            <img src={circle1} alt="" className="p-circle3" />
-            <img src={circle1} alt="" className="p-circle4" />
 
-            <div className="p-nfts-main">
-              <img src={img1} alt="" className="nfts p-img1" />
-              <img src={img2} alt="" className="nfts p-img2" />
-              <img src={img3} alt="" className="nfts p-img3" />
-              <img src={img4} alt="" className="nfts p-img4" />
-              <img src={img5} alt="" className="nfts p-img5" />
-              <img src={img6} alt="" className="nfts p-img6" />
-              <img src={img7} alt="" className="nfts p-img7" />
-              <img src={img8} alt="" className="nfts p-img8" />
-            </div>
+          <div className="p-nft-content font-face-gm">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </div>
+          <img src={circle1} alt="" className="p-circle1" />
+          <div className="temp-svg">
+            <img src={circle1} alt="" className="p-circle2" />
+          </div>
+          <img src={abort1} alt="abort" className="p-abort-wave" />
+          <img src={circle1} alt="" className="p-circle3" />
+          <img src={circle1} alt="" className="p-circle4" />
 
-            <div className="p-certificate-main">
-              <img src={coin} alt="" className="p-nft-coin" />
+          <div className="p-nfts-main">
+            <img src={img1} alt="" className="nfts p-img1" />
+            <img src={img2} alt="" className="nfts p-img2" />
+            <img src={img3} alt="" className="nfts p-img3" />
+            <img src={img4} alt="" className="nfts p-img4" />
+            <img src={img5} alt="" className="nfts p-img5" />
+            <img src={img6} alt="" className="nfts p-img6" />
+            <img src={img7} alt="" className="nfts p-img7" />
+            <img src={img8} alt="" className="nfts p-img8" />
+          </div>
 
-              <div className="p-circle-main">
-                <img src={circle1} alt="" className="p-circle-5" />
-              </div>
+          <img src={coin} alt="" className="p-nft-coin" />
 
-              <img src={certificate} alt="" className="p-nft-certificate" />
-              <img src={certiImg} alt="" className="p-nft-certificateImage" />
-            </div>
+          <div className="p-circle-main">
+            <img src={circle1} alt="" className="p-circle-5" />
+          </div>
 
-            <div className="certi-title">Certificate Of Ownership</div>
-            <div className="p-certi-content">
-              <div>Nft was verified on</div>
-              <div>Verified By</div>
-            </div>
-            <div className="p-certi-content2">
-              <div className="p-certi-date">17/10/2022</div>
-              <img src={verify} alt="" className="p-nft-verifify" />
-            </div>
+          <img src={certificate} alt="" className="p-nft-certificate" />
+          <img src={certiImg} alt="" className="p-nft-certificateImage" />
+          <div className="certi-title font-face-gm-extralight ">
+            Certificate Of Ownership
+          </div>
+          <div className="p-certi-content">
+            <div className="font-face-gm">Nft was verified on</div>
+            <div className="font-face-gm">Verified By</div>
+          </div>
+          <div className="p-certi-content2">
+            <div className="font-face-gm-thin">17/10/2022</div>
+            <img src={verify} alt="" className="p-nft-verifify" />
           </div>
         </section>
       </section>
