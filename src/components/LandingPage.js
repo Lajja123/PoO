@@ -23,22 +23,20 @@ function LandingPage() {
   return (
     <>
       <section className="p-main-container">
-        <section className="p-hero-main">
-          <div className="p-navbar-main">
-            <button className="p-connect-btn">Connect Wallet</button>
-            <img src={topwave} alt="waves" className="p-top1-waves" />
-          </div>
-          <div className="d-hero">
-            <video autoPlay loop muted className="p-middle-video">
-              <source src={nftvideo} type="video/mp4" />
-              <source src={nftvideo} type="video/ogg" />
-              Your browser does not support the video tag.
-            </video>
-            <div style={{ height: "auto" }}>
-              <img src={topwave} alt="waves" className="p-top2-waves" />
-            </div>
-          </div>
+        <div className="p-navbar-main">
+          <button className="p-connect-btn">Connect Wallet</button>
+          <img src={topwave} alt="waves" className="p-top1-waves" />
+        </div>
+        <div className="d-hero">
+          <video autoPlay loop muted className="p-middle-video">
+            <source src={nftvideo} type="video/mp4" />
+            <source src={nftvideo} type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
+        <section className="p-hero-main">
+          <img src={topwave} alt="waves" className="p-top2-waves" />
           <div className="bg-main">
             <div className="p-nft-content">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -64,9 +62,11 @@ function LandingPage() {
 
             <div className="p-certificate-main">
               <img src={coin} alt="" className="p-nft-coin" />
+
               <div className="p-circle-main">
                 <img src={circle1} alt="" className="p-circle-5" />
               </div>
+
               <img src={certificate} alt="" className="p-nft-certificate" />
               <img src={certiImg} alt="" className="p-nft-certificateImage" />
             </div>

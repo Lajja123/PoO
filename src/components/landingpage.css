@@ -1,5 +1,5 @@
 .p-main-container {
-  background-image: url("../assests/images/background.svg");
+  /* background-image: url("../assests/images/background.svg"); */
   height: auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,6 +10,15 @@
   width: 100%;
   max-height: 100%;
 }
+.p-hero-main {
+  background-image: url("../assests/images/background.svg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  max-height: 100%;
+}
 .poo-second-section {
   overflow-x: hidden;
   overflow-y: auto;
@@ -18,6 +27,7 @@
 .p-top1-waves {
   position: absolute;
   left: 0;
+  right: 0;
   top: -400px;
   bottom: 0;
   height: 75%;
@@ -25,7 +35,9 @@
 }
 .p-middle-video {
   width: 100%;
+  height: auto;
 }
+
 .p-top2-waves {
   position: relative;
   left: 0;
@@ -34,43 +46,44 @@
   bottom: 0;
   width: 100%;
   right: 0;
+  overflow: hidden;
 }
 .p-circle1 {
   position: relative;
-  width: 70rem;
+  width: 80rem;
   transform: rotate(120deg);
   left: -500px;
   right: 0;
-  top: -650px;
+  top: -700px;
 }
 .temp-svg {
   position: relative;
-  right: -80%;
-  width: 60rem;
+  right: -75%;
+  width: 50rem;
   overflow: hidden;
-  bottom: 1800px;
+  bottom: 1900px;
   z-index: 1;
 }
 .p-abort-wave {
   position: absolute;
-  top: 1000px;
-  bottom: 0;
+  top: 1150px;
+  width: 100%;
   bottom: 0;
   z-index: 1;
-  left: 0;
+  right: 0;
 }
 .p-circle3 {
   position: absolute;
-  width: 10rem;
-  top: 1700px;
-  right: 1100px;
+  width: 15rem;
+  top: 1900px;
+  right: 1000px;
 }
 .p-circle4 {
   position: absolute;
   width: 10rem;
   top: 1900px;
   transform: rotate(150deg);
-  left: 1500px;
+  left: 1450px;
 }
 .p-nft-content {
   position: relative;
@@ -103,36 +116,36 @@
 }
 
 .nfts:nth-of-type(1) {
-  left: 5%;
-  top: -20%;
+  left: 10%;
+  top: -15%;
 }
 .nfts:nth-of-type(2) {
-  right: 17%;
-  top: -30%;
-}
-.nfts:nth-of-type(3) {
-  left: 95%;
+  right: 20%;
   top: -20%;
 }
+.nfts:nth-of-type(3) {
+  left: 90%;
+  top: -14%;
+}
 .nfts:nth-of-type(4) {
-  left: 115%;
-  top: 10%;
+  left: 110%;
+  top: 15%;
 }
 .nfts:nth-of-type(5) {
-  left: 90%;
-  top: 50%;
+  left: 80%;
+  top: 40%;
 }
 .nfts:nth-of-type(6) {
-  right: 20%;
-  top: 55%;
-  width: 12rem;
+  right: 30%;
+  top: 45%;
+  width: 15rem;
 }
 .nfts:nth-of-type(7) {
-  right: 60%;
-  top: 50%;
+  right: 75%;
+  top: 35%;
 }
 .nfts:nth-of-type(8) {
-  right: 90%;
+  right: 100%;
   top: 15%;
 }
 
@@ -174,38 +187,32 @@
   top: 1350px;
   left: 400px;
 }
-.p-circle-5 {
-  width: 60rem;
-  position: absolute;
-  top: 290%;
-  bottom: 0;
-  margin-left: 60%;
-}
+
 .p-nft-coin {
-  width: 60rem;
+  width: 70rem;
   position: absolute;
-  top: 270%;
+  top: 240%;
   bottom: 0;
-  left: -150px;
+  left: -160px;
 }
 .p-nft-certificate {
-  width: 85rem;
+  width: 90rem;
   height: 100%;
   position: absolute;
-  top: 270%;
+  top: 245%;
   bottom: 0;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 .p-nft-certificateImage {
   width: 30rem;
   position: absolute;
-  top: 290%;
+  top: 270%;
   left: 20%;
 }
 .p-certi-content {
   display: flex;
   position: absolute;
-  top: 320%;
+  top: 300%;
   left: 50%;
   justify-content: space-around;
   width: 30%;
@@ -214,7 +221,7 @@
 .p-certi-content2 {
   display: flex;
   position: absolute;
-  top: 320%;
+  top: 300%;
   left: 50%;
   justify-content: space-around;
   width: 30%;
@@ -224,8 +231,22 @@
   position: absolute;
   z-index: 1;
   right: 0;
-  margin-top: 20px;
-  margin-right: 20px;
+  width: 15%;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 10px;
+  margin-right: 80px;
+  font-family: " AquireLight";
+  font-size: 2rem;
+  font-weight: 200;
+
+  background: linear-gradient(
+    90deg,
+    rgba(228, 97, 130, 1) 0%,
+    rgba(95, 142, 153, 1) 35%,
+    rgba(162, 139, 54, 1) 94%,
+    rgba(248, 205, 63, 1) 100%
+  );
 }
 .p-nft-verifify {
   width: 2rem;
@@ -239,7 +260,7 @@
   position: absolute;
   font-family: " Josefin Sans";
   text-transform: uppercase;
-  top: 300%;
+  top: 275%;
   width: 40%;
   color: #ffff;
   right: 15%;
@@ -248,7 +269,16 @@
   letter-spacing: 5px;
   line-height: 60px;
 }
-/* .p-heroo-main {
+/* .p-certificate-main-2 {
+  height: max-content;
   overflow-x: hidden;
   overflow-y: auto;
 } */
+.p-circle-main {
+  position: relative;
+  right: -60%;
+  width: 70rem;
+  overflow: hidden;
+  bottom: 1500px;
+  overflow-y: hidden;
+}

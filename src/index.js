@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./assests/JosefinSans-Light.ttf";
+import "./assests/AquireLight-YzE0o.otf";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -7,6 +7,11 @@
   src: local("JosefinSans"),
     url("./assests/JosefinSans-Light.ttf") format("truetype");
 }
+@font-face {
+  font-family: "AquireLight";
+  src: local("AquireLight"),
+    url("./assests/AquireLight-YzE0o.otf") format("truetype");
+}
 
 body {
   margin: 0;
