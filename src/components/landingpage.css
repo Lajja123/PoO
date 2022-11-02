@@ -243,21 +243,53 @@
   position: absolute;
   z-index: 1;
   right: 0;
-  border-radius: 50px;
+  border-radius: 30px;
   font-size: 1rem;
   border-radius: border-rounded;
   margin: 10px;
-  padding: 1em 2em;
+  padding: 0.9em 2em;
   background-size: 200% auto;
-  color: white;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  background: linear-gradient(
-    90deg,
-    rgba(241, 99, 134, 1) 0%,
-    rgba(0, 86, 106, 1) 35%,
-    rgba(248, 205, 63, 1) 100%
-  );
-  transition: 0.5s;
+  background: -webkit-linear-gradient(360deg, #f16386 0%, #f8cd3f 100%);
+  margin-top: 30px;
+  margin-right: 40px;
+  background-size: 200% 200%;
+  -webkit-animation: rainbow 5s ease infinite;
+  -z-animation: rainbow 5s ease infinite;
+  -o-animation: rainbow 5s ease infinite;
+  animation: rainbow 5s ease infinite alternate;
+}
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
 }
 .p-nft-verifify {
   width: 2rem;

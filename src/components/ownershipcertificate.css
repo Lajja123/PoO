@@ -10,8 +10,9 @@
 
   height: auto;
 }
-.nfts-img4 {
+img.nfts-img4 {
   border-radius: 10px;
+  min-height: 100%;
 }
 .ownrship-certi-main {
   border-radius: 10px;
@@ -22,6 +23,7 @@
 }
 .ownership-certi-img {
   width: 100%;
+  height: 330px;
 }
 .ownership-certi-info {
   align-items: center;
@@ -31,5 +33,13 @@
   margin: 10px;
 }
 .ownership-flex-container {
-  margin-bottom: 30px;
+  margin: 20px;
+}
+.ownership-btn {
+  background-color: #00566a;
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 20px;
+  margin-top: 20px;
 }

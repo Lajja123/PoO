@@ -50,8 +50,8 @@ function CreationPage() {
             <div className="p-signle-certificate-content">
               <img src={dnft} alt="" className="singlecertificate-nfts-img4" />
               <div className="single-certi-info2">
-                <h3>Owner Name</h3>
-                <h3>NFT Title</h3>
+                <h3 className="p-owner-name">Owner Name</h3>
+                <h3 className="p-owner-name">NFT Title</h3>
                 <div>Owning Date</div>
                 <div>Current Date</div>
               </div>

@@ -16,7 +16,7 @@ function CurrentNft() {
               <p>Secondory Text</p>
             </div>
             <div className="current-certi-mainbtn">
-              <button className="button">Generate Certificate</button>
+              <button className="current-button">Generate Certificate</button>
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@ function CurrentNft() {
               <p>Secondory Text</p>
             </div>
             <div className="current-certi-mainbtn">
-              <button className="button">Generate Certificate</button>
+              <button className="current-button">Generate Certificate</button>
             </div>
           </div>
         </div>{" "}
@@ -44,7 +44,7 @@ function CurrentNft() {
               <p>Secondory Text</p>
             </div>
             <div className="current-certi-mainbtn">
-              <button className="button">Generate Certificate</button>
+              <button className="current-button">Generate Certificate</button>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@ function CurrentNft() {
               <p>Secondory Text</p>
             </div>
             <div className="current-certi-mainbtn">
-              <button className="button">Generate Certificate</button>
+              <button className="current-button">Generate Certificate</button>
             </div>
           </div>
         </div>{" "}
@@ -72,7 +72,7 @@ function CurrentNft() {
               <p>Secondory Text</p>
             </div>
             <div className="current-certi-mainbtn">
-              <button className="button">Generate Certificate</button>
+              <button className="current-button">Generate Certificate</button>
             </div>
           </div>
         </div>

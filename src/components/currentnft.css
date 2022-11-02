@@ -26,10 +26,22 @@
   margin-bottom: 30px;
   width: 100%;
 }
-/* .current-certi-mainbtn {
-  margin-right: 25%;
-} */
-
-.curren-certi-img {
+.current-certi-img {
   width: 100%;
+  height: 300px;
+}
+.nfts-img4 {
+  border-radius: 10px;
+  min-height: 100%;
+}
+.current-flex-container {
+  margin: 20px;
+}
+.current-button {
+  background-color: #00566a;
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 20px;
+  margin-top: 20px;
 }

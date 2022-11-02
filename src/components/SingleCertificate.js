@@ -10,9 +10,9 @@ function SingleCertificate() {
           <img src={dnft} alt="" className="singlecertificate-nfts-img4" />
 
           <div className="single-certi-info">
-            <h3>NFT Details</h3>
-            <div>Frome Date: dd/mm/yyyy</div>
-            <div>To Date: dd/mm/yyyy</div>
+            <h3 className="certi-nft-details">NFT Details</h3>
+            <div className="certi-nft-date1">Frome Date: dd/mm/yyyy</div>
+            <div className="certi-nft-date2">To Date: dd/mm/yyyy</div>
           </div>
         </div>
         <div className="cetificate-name">Certificate</div>
@@ -22,8 +22,8 @@ function SingleCertificate() {
             <div className="p-signle-certificate-content">
               <img src={dnft} alt="" className="singlecertificate-nfts-img4" />
               <div className="single-certi-info2">
-                <h3>Owner Name</h3>
-                <h3>NFT Title</h3>
+                <h3 className="p-owner-name">Owner Name</h3>
+                <h3 className="p-owner-name">NFT Title</h3>
                 <div>Owning Date</div>
                 <div>Current Date</div>
               </div>

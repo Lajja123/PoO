@@ -19,13 +19,72 @@ import certificate from "../assests/images/certificate.svg";
 import certiImg from "../assests/images/certificate-img.svg";
 import verify from "../assests/images/verify.svg";
 
+import { useEffect, useState } from "react";
+
 function LandingPage() {
+  const [walletAddress, setWalletAddress] = useState("");
+  useEffect(() => {
+    getCurrentWalletConnected();
+    addWalleteListener();
+  });
+  const connectWallet = async () => {
+    if (typeof window != "undefined" && window.ethereum != "undefined") {
+      try {
+        const account = await window.ethereum.request({
+          method: "eth_requestAccounts",
+        });
+        setWalletAddress(account[0]);
+        console.log(account[0]);
+      } catch (err) {
+        console.error(err.message);
+      }
+    } else {
+      console.log("Please Install Metamast");
+    }
+  };
+
+  const getCurrentWalletConnected = async () => {
+    if (typeof window != "undefined" && window.ethereum != "undefined") {
+      try {
+        const account = await window.ethereum.request({
+          method: "eth_requestAccounts",
+        });
+        if (account.length > 0) {
+          setWalletAddress(account[0]);
+          console.log(account[0]);
+        } else {
+          console.log("connect to metamask using connect button");
+        }
+      } catch (err) {
+        console.error(err.message);
+      }
+    } else {
+      console.log("Please Install Metamast");
+    }
+  };
+
+  const addWalleteListener = async () => {
+    if (typeof window != "undefined" && typeof window.ethereum != "undefined") {
+      window.ethereum.on("accountChanged", (account) => {
+        setWalletAddress(account[0]);
+        console.log(account[0]);
+      });
+    } else {
+      setWalletAddress("");
+      console.log("Please Install Metamast");
+    }
+  };
   return (
     <>
       <section className="p-main-container">
         <div className="p-navbar-main">
-          <button className="p-connect-btn font-face-gm-aqiure">
-            Connect Wallet
+          <button onClick={connectWallet} className="p-connect-btn">
+            {walletAddress && walletAddress.length > 0
+              ? `Connected: ${walletAddress.substring(
+                  0,
+                  6
+                )}...${walletAddress.substring(38)}`
+              : " Connect Wallet"}
           </button>
           <img src={topwave} alt="waves" className="p-top1-waves" />
         </div>
