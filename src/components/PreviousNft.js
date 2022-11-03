@@ -16,7 +16,9 @@ function PreviousNft() {
               <p>Secondory Text</p>
             </div>
             <div className="current-certi-mainbtn">
-              <button className="current-button">Generate Certificate</button>
+              <a href="http://localhost:3000/creationpage">
+                <button className="current-button">Generate Certificate</button>
+              </a>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import react, { useEffect } from "react";
 import user from "../assests/images/man.png";
 import "../components/navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   useEffect(() => {
@@ -19,9 +20,17 @@ function Navbar() {
             <div className="left-navbar">
               <div className="navigation">
                 <ul className="navigation-menu">
-                  <li className="submenu home-nav">Currently Owned NFT's</li>
-                  <li className="submenu">Previously Owned NFT's</li>
-                  <li className="submenu">Ownership Certificate</li>
+                  <li className="submenu home-nav">
+                    <Link to="/currentnft">Currently Owned NFT's</Link>
+                  </li>
+                  <li className="submenu">
+                    <Link to="/previousnft">Previously Owned NFT's</Link>
+                  </li>
+                  <li className="submenu">
+                    <Link to="/ownershipcertificate">
+                      Ownership Certificate
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div className="user-img">

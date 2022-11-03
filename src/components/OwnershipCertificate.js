@@ -3,6 +3,7 @@ import "../components/ownershipcertificate.css";
 import dnft from "../assests/images/dummynft.png";
 import ownnft2 from "../assests/images/ownnft2.png";
 import ownnft3 from "../assests/images/ownnft3.png";
+import { Link } from "react-router-dom";
 
 function OwnershipCertificate() {
   return (
@@ -21,7 +22,9 @@ function OwnershipCertificate() {
               <div> Date: xx/xx/xxxx To xx/xx/xxxx</div>
             </div>
             <div className="p-btn-main">
-              <button className="ownership-btn">Share Certificate </button>
+              <button className="ownership-btn">
+                Share Certificate <Link to="/singlecertificate"></Link>
+              </button>
             </div>
           </div>
         </div>
@@ -38,7 +41,9 @@ function OwnershipCertificate() {
               <div> Date: xx/xx/xxxx To xx/xx/xxxx</div>
             </div>
             <div className="p-btn-main">
-              <button className="ownership-btn">Share Certificate </button>
+              <button className="ownership-btn">
+                Share Certificate<Link to="/singlecertificate"></Link>{" "}
+              </button>
             </div>
           </div>
         </div>
@@ -55,7 +60,9 @@ function OwnershipCertificate() {
               <div> Date: xx/xx/xxxx To xx/xx/xxxx</div>
             </div>
             <div className="p-btn-main">
-              <button className="ownership-btn">Share Certificate </button>
+              <button className="ownership-btn">
+                Share Certificate <Link to="/singlecertificate"></Link>
+              </button>
             </div>
           </div>
         </div>
@@ -72,7 +79,9 @@ function OwnershipCertificate() {
               <div> Date: xx/xx/xxxx To xx/xx/xxxx</div>
             </div>
             <div className="p-btn-main">
-              <button className="ownership-btn">Share Certificate </button>
+              <button className="ownership-btn">
+                Share Certificate <Link to="/singlecertificate"></Link>
+              </button>
             </div>
           </div>
         </div>
@@ -89,7 +98,10 @@ function OwnershipCertificate() {
               <div> Date: xx/xx/xxxx To xx/xx/xxxx</div>
             </div>
             <div className="p-btn-main">
-              <button className="ownership-btn">Share Certificate </button>
+              {" "}
+              <Link to="/singlecertificate">
+                <button className="ownership-btn">Share Certificate </button>
+              </Link>
             </div>
           </div>
         </div>

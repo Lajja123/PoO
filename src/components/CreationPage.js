@@ -54,6 +54,7 @@ function CreationPage() {
                 <h3 className="p-owner-name">NFT Title</h3>
                 <div>Owning Date</div>
                 <div>Current Date</div>
+                <button className="p-mint-nft">Mint NFT</button>
               </div>
             </div>
           </div>

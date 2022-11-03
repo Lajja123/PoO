@@ -113,3 +113,12 @@
 .creation-date2 {
   margin-top: 5px;
 }
+.p-mint-nft {
+  background-color: #00566a;
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px;
+  margin-top: 50px;
+  font-size: 1rem;
+}

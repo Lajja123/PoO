@@ -20,6 +20,7 @@ import certiImg from "../assests/images/certificate-img.svg";
 import verify from "../assests/images/verify.svg";
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   const [walletAddress, setWalletAddress] = useState("");
@@ -79,12 +80,14 @@ function LandingPage() {
       <section className="p-main-container">
         <div className="p-navbar-main">
           <button onClick={connectWallet} className="p-connect-btn">
-            {walletAddress && walletAddress.length > 0
-              ? `Connected: ${walletAddress.substring(
-                  0,
-                  6
-                )}...${walletAddress.substring(38)}`
-              : " Connect Wallet"}
+            <Link to="/register">
+              {walletAddress && walletAddress.length > 0
+                ? `Connected: ${walletAddress.substring(
+                    0,
+                    6
+                  )}...${walletAddress.substring(38)}`
+                : " Connect Wallet"}
+            </Link>
           </button>
           <img src={topwave} alt="waves" className="p-top1-waves" />
         </div>
@@ -126,19 +129,20 @@ function LandingPage() {
           <div className="p-circle-main">
             <img src={circle1} alt="" className="p-circle-5" />
           </div>
-
-          <img src={certificate} alt="" className="p-nft-certificate" />
-          <img src={certiImg} alt="" className="p-nft-certificateImage" />
-          <div className="certi-title font-face-gm-extralight ">
-            Certificate Of Ownership
-          </div>
-          <div className="p-certi-content">
-            <div className="font-face-gm">Nft was verified on</div>
-            <div className="font-face-gm">Verified By</div>
-          </div>
-          <div className="p-certi-content2">
-            <div className="font-face-gm-thin">17/10/2022</div>
-            <img src={verify} alt="" className="p-nft-verifify" />
+          <div className="p-nft-certi-main-poo">
+            <img src={certificate} alt="" className="p-nft-certificate" />
+            <img src={certiImg} alt="" className="p-nft-certificateImage" />
+            <div className="certi-title font-face-gm-extralight ">
+              Certificate Of Ownership
+            </div>
+            <div className="p-certi-content">
+              <div className="font-face-gm">Nft was verified on</div>
+              <div className="font-face-gm">Verified By</div>
+            </div>
+            <div className="p-certi-content2">
+              <div className="font-face-gm-thin">17/10/2022</div>
+              <img src={verify} alt="" className="p-nft-verifify" />
+            </div>
           </div>
         </section>
       </section>

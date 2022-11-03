@@ -13,23 +13,23 @@ import PreviousNft from "./components/PreviousNft";
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
       <Router>
+        <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<LandingPage />}></Route>
           {/* <Route path="navbar" element={<Navbar/>}></Route> */}
-          <Route path="register" element={<Registration />}></Route>
-          <Route path="currentnft" element={<CurrentNft />}></Route>
+          <Route path="/register" element={<Registration />}></Route>
+          <Route path="/currentnft" element={<CurrentNft />}></Route>
           <Route
-            path="ownershipcertificate"
+            path="/ownershipcertificate"
             element={<OwnershipCertificate />}
           ></Route>
-          <Route path="previousnft" element={<PreviousNft />}></Route>
+          <Route path="/previousnft" element={<PreviousNft />}></Route>
           <Route
-            path="singlecertificate"
+            path="/singlecertificate"
             element={<SingleCertificate />}
           ></Route>
-          <Route path="creationpage" element={<CreationPage />}></Route>
+          <Route path="/creationpage" element={<CreationPage />}></Route>
         </Routes>
       </Router>
     </div>
