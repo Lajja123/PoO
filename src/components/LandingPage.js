@@ -100,30 +100,32 @@ function LandingPage() {
         </div>
 
         <section className="p-hero-main">
-          <img src={topwave} alt="waves" className="p-top2-waves" />
+          <section className="p-landingpage-section2">
+            <img src={topwave} alt="waves" className="p-top2-waves" />
 
-          <div className="p-nft-content font-face-gm">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </div>
-          <img src={circle1} alt="" className="p-circle1" />
-          <div className="temp-svg">
-            <img src={circle1} alt="" className="p-circle2" />
-          </div>
-          <img src={abort1} alt="abort" className="p-abort-wave" />
-          <img src={circle1} alt="" className="p-circle3" />
-          <img src={circle1} alt="" className="p-circle4" />
+            <div className="p-nft-content font-face-gm">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </div>
+            <img src={circle1} alt="" className="p-circle1" />
+            <div className="temp-svg">
+              <img src={circle1} alt="" className="p-circle2" />
+            </div>
+            <img src={abort1} alt="abort" className="p-abort-wave" />
+            <img src={circle1} alt="" className="p-circle3" />
+            <img src={circle1} alt="" className="p-circle4" />
 
-          <div className="p-nfts-main">
-            <img src={img1} alt="" className="nfts p-img1" />
-            <img src={img2} alt="" className="nfts p-img2" />
-            <img src={img3} alt="" className="nfts p-img3" />
-            <img src={img4} alt="" className="nfts p-img4" />
-            <img src={img5} alt="" className="nfts p-img5" />
-            <img src={img6} alt="" className="nfts p-img6" />
-            <img src={img7} alt="" className="nfts p-img7" />
-            <img src={img8} alt="" className="nfts p-img8" />
-          </div>
-
+            <div className="p-nfts-main">
+              <img src={img1} alt="" className="nfts p-img1" />
+              <img src={img2} alt="" className="nfts p-img2" />
+              <img src={img3} alt="" className="nfts p-img3" />
+              <img src={img4} alt="" className="nfts p-img4" />
+              <img src={img5} alt="" className="nfts p-img5" />
+              <img src={img6} alt="" className="nfts p-img6" />
+              <img src={img7} alt="" className="nfts p-img7" />
+              <img src={img8} alt="" className="nfts p-img8" />
+            </div>
+          </section>
+          <section className="p-landingpage-section3"></section>
           <img src={coin} alt="" className="p-nft-coin" />
 
           <div className="p-circle-main">

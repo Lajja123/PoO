@@ -390,24 +390,159 @@
     height: 240vh;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
+  .p-circle4 {
+    display: none;
+  }
   .p-nfts-main {
     margin-left: -15%;
   }
   .p-top1-waves {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    min-width: 100%;
-    top: -450px;
-    left: 0;
-    right: 0;
+    top: -350px;
+  }
+  .p-circle1 {
+    width: 35rem;
+    left: -150px;
+    top: -500px;
+  }
+  .p-circle2 {
+    width: 35rem;
+    width: 35rem;
+    margin-top: 75%;
+  }
+  .p-top2-waves {
+    top: -100px;
+  }
+  .p-nft-content {
+    font-size: 1.5rem;
+    bottom: 60px;
+  }
+  .p-nfts-main {
+    width: 45vw;
+    margin-top: -65%;
+  }
+  .nfts:nth-of-type(6) {
+    right: 33%;
+    top: 45%;
+    width: 8rem;
+  }
+  .p-abort-wave {
+    margin-top: -55%;
+  }
+  .p-circle3 {
+    display: none;
+  }
+  .p-circle-main {
+    width: 35rem;
+    margin-top: -20%;
+  }
+  .p-nft-coin {
+    margin-top: -100%;
+    margin-left: 100px;
+    width: 35rem;
+  }
+  .p-nft-certificate {
+    margin-top: -115%;
+    width: 75%;
+  }
+  .p-nft-certificateImage {
+    margin-top: -110%;
+    width: 15rem;
+  }
+  .certi-title {
+    margin-top: -110%;
+    font-size: 1.5rem;
+  }
+  .p-certi-content {
+    margin-top: -35%;
+    font-size: 1rem;
+  }
+  .p-certi-content2 {
+    margin-top: -115%;
+    font-size: 1rem;
+  }
+  .p-hero-main {
+    height: 145vh;
   }
   .p-connect-btn {
-    margin: 20px;
-    width: 20%;
+    padding: 10px;
+    font-size: 0.5rem;
+    margin: 10px;
+    width: 8rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .p-circle4 {
+    display: none;
+  }
+  .p-nfts-main {
+    margin-top: -22%;
+    margin-left: -15%;
+  }
+  .p-connect-btn {
+    width: 150px;
+    padding: 5px;
+    margin: 7px 20px;
     height: 40px;
-    font-size: 1em;
-    padding: 0;
+    font-size: 0.9rem;
+  }
+  .p-circle1 {
+    width: 50rem;
+    margin-top: 25%;
+    margin-left: 100px;
+  }
+  .p-circle2 {
+    width: 40rem;
+    margin-top: 30%;
+  }
+  .p-nft-content {
+    font-size: 1.5rem;
+    max-width: 100%;
+    width: 50%;
+    margin-right: 25%;
+  }
+  .p-abort-wave {
+    margin-top: -55%;
+  }
+  .p-nfts-main {
+    margin-top: -65%;
+    margin-left: -15%;
+  }
+  .p-circle3 {
+    margin-top: -85%;
+    right: 520px;
+    width: 10rem;
+  }
+  .p-nft-coin {
+    margin-top: -75%;
+    margin-left: 90px;
+    width: 35rem;
+  }
+  .p-nft-certificate {
+    margin-top: -93%;
+  }
+  .p-nft-certificateImage {
+    margin-top: -90%;
+    width: 17rem;
+  }
+
+  .p-certi-content {
+    margin-top: -16%;
+    font-size: 1.3rem;
+  }
+  .p-certi-content2 {
+    margin-top: -95%;
+    font-size: 1.3rem;
+  }
+  .p-hero-main {
+    height: 170vh;
+  }
+
+  .certi-title {
+    margin-top: -90%;
+    font-size: 2rem;
+  }
+  .p-circle-main {
+    width: 50rem;
   }
 }
