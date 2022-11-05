@@ -8,7 +8,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
   width: 100%;
-  height: 330vh;
+  /* height: 330vh; */
 }
 .poo-section1-landingpage {
   width: 100%;
@@ -18,22 +18,21 @@
 }
 .p-top1-waves {
   position: absolute;
-  bottom: -220px;
+  bottom: -25vh;
   width: 100%;
 }
 .d-hero {
   width: 100%;
 }
-.p-top2-waves {
-  transform: rotate(180deg);
-}
+
 .p-wave2-main {
   position: relative;
 }
 .p-top2-waves {
   position: absolute;
-  bottom: -380px;
+  top: -10vw;
   width: 100%;
+  transform: rotate(180deg);
 }
 .p-middle-video {
   width: 100%;
@@ -102,8 +101,8 @@
 .p-circle1-svg {
   width: 60vw;
   transform: rotate(120deg);
-  right: 350px;
-  margin-top: -70px;
+  right: 17vw;
+  margin-top: -7vw;
   position: relative;
   /* bottom: 50px; */
 }
@@ -111,7 +110,7 @@
   width: 50vw;
   /* transform: rotate(120deg); */
   position: relative;
-  left: 400px;
+  left: 20vw;
   margin-top: -100px;
   bottom: 90px;
 }
@@ -122,7 +121,7 @@
 }
 .p-abort-wave {
   position: absolute;
-  top: -40px;
+  top: 0;
 }
 .p-nfts-main {
   position: absolute;
@@ -132,8 +131,8 @@
   max-height: 1000px;
   transition: all 1s ease;
   z-index: 1;
-  top: 150px;
-  left: 400px;
+  top: 10vw;
+  left: 20vw;
 }
 .p-nfts-main :hover {
   transform: scale(1.2);
@@ -170,7 +169,6 @@
 .nfts:nth-of-type(6) {
   right: 30%;
   top: 45%;
-  width: 15rem;
 }
 .nfts:nth-of-type(7) {
   right: 65%;
@@ -190,23 +188,23 @@
   word-wrap: break-word;
   color: #ffff;
 
-  left: 500px;
-  top: 400px;
+  left: 25vw;
+  top: 22vw;
   bottom: 0;
   word-spacing: 5px;
 }
 .p-circle3-svg {
   width: 15%;
   position: absolute;
-  bottom: 150px;
-  left: 600px;
+  bottom: 0vw;
+  left: 31vw;
   z-index: 1;
 }
 .p-circle4-svg {
-  width: 15em;
+  width: 10em;
   position: absolute;
-  bottom: 100px;
-  right: 250px;
+  bottom: 6vw;
+  right: 14vw;
 
   transform: rotate(140deg);
 }
@@ -232,19 +230,19 @@
 .p-coin-main {
   width: 50%;
   position: relative;
-  right: 150px;
+  right: 7vw;
 }
 .p-nft-certificate {
   width: 70%;
   position: absolute;
-  margin-top: -55%;
-  left: 300px;
+  margin-top: -52%;
+  left: 16vw;
 }
 .p-nft-certificateImage {
   width: 25%;
   position: absolute;
   margin-top: -45%;
-  left: 400px;
+  left: 20vw;
 }
 /* .img-content-flex {
   display: flex;
@@ -255,20 +253,20 @@
   position: absolute;
   /* top: 205%; */
   font-size: 1.8rem;
-  left: 50%;
+  left: 45vw;
   justify-content: space-around;
   width: 30%;
-  margin-top: -34%;
+  margin-top: -32%;
 }
 .p-certi-content2 {
   display: flex;
   position: absolute;
   /* top: 305%; */
-  left: 50%;
+  left: 45vw;
   font-size: 1.8rem;
   justify-content: space-around;
   width: 30%;
-  margin-top: -30%;
+  margin-top: -29%;
 }
 .p-nft-verifify {
   width: 2rem;
@@ -280,10 +278,42 @@
   /* top: 280%; */
   width: 40%;
   color: #ffff;
-  right: 15%;
-  font-size: 4rem;
+  right: 20vw;
+  font-size: 3rem;
   word-spacing: 10px;
   letter-spacing: 5px;
   /* line-height: 60px; */
-  margin-top: -45%;
+  margin-top: -42%;
+}
+@media screen and (max-width: 1024px) {
+  .p-top1-waves {
+    width: 100%;
+    bottom: -20vh;
+    left: 0;
+    right: 0;
+  }
+  .p-circle1-svg {
+    margin-top: -25vw;
+    width: 50vw;
+  }
+  .p-nft-content {
+    font-size: 2rem;
+  }
+  .temp-svg {
+    margin-top: 10vw;
+  }
+  .p-circle3-svg {
+    bottom: 5vw;
+    left: 26vw;
+  }
+  .p-circle4-svg {
+    bottom: 1vw;
+  }
+  .p-coin-main {
+    margin-top: -2vw;
+  }
+  .p-nft-certificate {
+    width: 65%;
+    margin-top: -56%;
+  }
 }
