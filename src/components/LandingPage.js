@@ -84,14 +84,12 @@ function LandingPage() {
               onClick={connectWallet}
               className="p-connect-btn font-face-gm-aqiure"
             >
-              <Link to="/register">
-                {walletAddress && walletAddress.length > 0
-                  ? `Connected: ${walletAddress.substring(
-                      0,
-                      6
-                    )}...${walletAddress.substring(38)}`
-                  : " Connect Wallet"}
-              </Link>
+              {walletAddress && walletAddress.length > 0
+                ? `Connected: ${walletAddress.substring(
+                    0,
+                    6
+                  )}...${walletAddress.substring(38)}`
+                : " Connect Wallet"}
             </button>
           </div>
           <div className="p-wave1-main">
@@ -112,7 +110,9 @@ function LandingPage() {
         <section className="p-section2-landingpage">
           <div className="section2-main-div">
             <div className="p-nft-content font-face-gm">
-              <h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+              <h3>
+                "Claim the ownership of your prized possessions - your NFTs!
+              </h3>
             </div>
             <div className="temp-svg">
               <div className="p-circle1-svg">
@@ -147,7 +147,14 @@ function LandingPage() {
             </div>
           </div>
         </section>
+
         <section className="p-section3-landingpage">
+          <div className="certi-heading font-face-gm">
+            <h3>
+              PoO parses the blockchain data and creates a digital certificate
+              as a proof of ownership
+            </h3>
+          </div>
           <div className="section3-main-div">
             <div className="coin-circle-flex">
               <div className="p-coin-main">
@@ -157,6 +164,7 @@ function LandingPage() {
                 <img src={circle1} alt="" className="p-circle-5" />
               </div>
             </div>
+
             <div className="p-nft-certi-main-poo">
               <img src={certificate} alt="" className="p-nft-certificate" />
 

@@ -216,6 +216,7 @@
 }
 .p-section3-landingpage {
   width: 100%;
+  margin-top: 50px;
 }
 .coin-circle-flex {
   display: flex;
@@ -285,10 +286,17 @@
   /* line-height: 60px; */
   margin-top: -38%;
 }
+.certi-heading {
+  color: #ffff;
+  font-size: 3rem;
+  width: 50%;
+  text-align: center;
+  margin-left: 30%;
+}
 @media screen and (max-width: 1024px) {
   .p-top1-waves {
     width: 100%;
-    bottom: -20vh;
+    bottom: -17vh;
     left: 0;
     right: 0;
   }
@@ -327,16 +335,56 @@
   }
   .p-certi-content {
     font-size: 1.2rem;
-    margin-top: -27%;
+    margin-top: -26vw;
     left: 43vw;
   }
   .p-certi-content2 {
     font-size: 1.2rem;
-    margin-top: -23%;
+    margin-top: -23vw;
     left: 43vw;
   }
   .p-circle-main {
     left: 10vw;
     margin-top: 2vw;
+  }
+  .p-connect-btn {
+    font-size: 1rem;
+    margin: 10px;
+    padding: 10px;
+    margin-right: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .p-top1-waves {
+    bottom: -15vw;
+  }
+  .p-connect-btn {
+    margin: 10px;
+    padding: 10px;
+    font-size: smaller;
+  }
+  .p-circle1-svg {
+    margin-top: -21vw;
+  }
+  .p-circle2-svg {
+    margin-top: -50px;
+  }
+  .p-nft-content {
+    font-size: 1.5rem;
+  }
+  .p-circle4-svg {
+    width: 8em;
+  }
+  .p-circle-5 {
+    margin-top: 50px;
+  }
+  .certi-title {
+    font-size: 1.5rem;
+  }
+  .p-certi-content {
+    font-size: 1rem;
+  }
+  .p-certi-content2 {
+    font-size: 1rem;
   }
 }

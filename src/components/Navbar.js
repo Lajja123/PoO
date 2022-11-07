@@ -2,6 +2,7 @@ import react, { useEffect } from "react";
 import user from "../assests/images/man.png";
 import "../components/navbar.css";
 import { Link } from "react-router-dom";
+import logo from "../assests/images/logo1.png";
 
 function Navbar() {
   useEffect(() => {
@@ -9,18 +10,17 @@ function Navbar() {
   }, []);
   return (
     <>
-      {window.location.pathname !== "/" ? (
+      {window.location.pathname !== "/" &&
+      window.location.pathname !== "/register" ? (
         <div className="main-header">
           <div className="header-container">
-            <div className="main-logo">
-              <div className="logo">
-                <img src={user} className="logo-navbar" />
-              </div>
+            <div className="logo">
+              <img src={logo} className="logo-navbar" />
             </div>
             <div className="left-navbar">
-              <div className="navigation">
-                <ul className="navigation-menu">
-                  <li className="submenu home-nav">
+              <div className="navigation ">
+                <ul className="navigation-menu font-face-gm">
+                  <li className="submenu home-nav ">
                     <Link to="/currentnft">Currently Owned NFT's</Link>
                   </li>
                   <li className="submenu">
@@ -37,7 +37,9 @@ function Navbar() {
                 <img class="p-user" src={user} alt="Rounded avatar" />{" "}
               </div>
               <div className="download-btn">
-                <button className="navbar-button">Logout</button>
+                <button className="navbar-button font-face-gm-aqiure">
+                  Logout
+                </button>
               </div>
             </div>
           </div>

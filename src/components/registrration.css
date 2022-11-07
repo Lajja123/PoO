@@ -1,123 +1,76 @@
-/* .p-main-register {
-  width: 30%;
+.p-main-register {
+  width: 40%;
   margin: 0 auto;
-  height: auto;
-  margin-top: 10%;
+  margin-top: 40px;
+  height: 50vh;
   padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 6px 5px #eff0ee;
+  border-radius: 50px;
+  background-color: #f7b24f;
+  box-shadow: 3.9661px 0px 41.0636px -4px rgba(0, 0, 0, 0.41);
 }
 
 .p-register-input {
   margin-top: 15px;
+  background-color: transparent;
+  padding-left: 100px;
 }
 .signup-title {
-  font-size: xx-large;
+  font-size: 3rem;
   margin-bottom: 10px;
+  color: #ffff;
+  letter-spacing: 5px;
 }
-.register-icon {
-  width: 30px;
-  height: 30px;
-
+.register-icons2 {
+  width: 50px;
+  height: 60px;
 }
 .user-main {
   display: flex;
-  justify-content: center;
-  text-align: justify;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
+}
+.register-icons1 {
+  position: absolute;
+  margin-left: 75px;
+  margin-top: 30px;
 }
 .p-username {
-  width: 50%;
-  margin-left: 20px;
+  width: 80%;
+  height: 7vh;
+  background-color: #fad39a;
+  border-radius: 100px;
+
+  margin: 0 auto;
 }
 .signup-btn {
   margin-top: 30px;
   background-color: #00566a;
   color: white;
-  margin-left: 10%;
-  width: 10rem;
-} */
-.signup-main {
-  width: 400px;
-  height: 500px;
-  /* background: red; */
-  margin: 0 auto;
-  margin-top: 10%;
-  overflow: hidden;
-  background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38")
-    no-repeat center/ cover;
-  border-radius: 10px;
-  box-shadow: 5px 20px 50px #000;
-  /* background-image: url("https://image.freepik.com/free-photo/living-room-with-armchairs-shelfs-room-wall-blue_41470-216.jpg"); */
+
+  width: 15rem;
+  letter-spacing: 3px;
+  font-size: 1.5em;
 }
-#chk {
-  display: none;
+.p-signup-main-div {
+  background-image: url("../assests/images/Background-navbar.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 10%;
 }
-.signup {
-  position: relative;
+.HELLO {
   width: 100%;
   height: 100%;
-  margin-top: 10%;
 }
-label {
-  font-size: 2.3em;
-  justify-content: center;
-  display: flex;
-  margin: 60px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
+.p-register-input {
+  margin-top: 5%;
 }
-.signup-input {
-  width: 60%;
-  height: 40px;
-  background: #e0dede;
-  justify-content: center;
-  display: flex;
-  margin: 20px auto;
-  padding: 10px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-}
-.signup-button {
-  width: 60%;
-  height: 40px;
-  margin: 10px auto;
-  justify-content: center;
-  display: block;
-  color: #fff;
-  background: #00566a;
-  font-size: 1em;
-  font-weight: bold;
-  margin-top: 20px;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  transition: 0.2s ease-in;
-  cursor: pointer;
-}
-.signup-button:hover {
-  background: #00566a;
-}
-.login {
-  height: 460px;
-  background: #eee;
-  border-radius: 60% / 10%;
-  transform: translateY(-180px);
-  transition: 0.8s ease-in-out;
-}
-.login label {
-  color: #00566a;
-  transform: scale(0.6);
-}
-
-#chk:checked ~ .login {
-  transform: translateY(-500px);
-}
-#chk:checked ~ .login label {
-  transform: scale(1);
-}
-#chk:checked ~ .signup label {
-  transform: scale(0.6);
+input::placeholder {
+  color: #f16386;
+  font-family: "JosefinSans-Light";
+  /* padding-left: ; */
+  font-size: 25px;
 }

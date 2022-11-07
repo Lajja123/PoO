@@ -11,13 +11,11 @@ function CurrentNft() {
             <img src={dnft} alt="" className="nfts-img4" />
           </div>
           <div className="current-certi-info">
-            <div>
-              <h3>NFT Name</h3>
-              <p>Secondory Text</p>
-            </div>
-            <div className="current-certi-mainbtn">
-              <button className="current-button">Generate Certificate</button>
-            </div>
+            <h3>NFT Name</h3>
+            <p>Secondory Text</p>
+          </div>
+          <div className="current-certi-mainbtn">
+            <button className="current-button">Generate Certificate</button>
           </div>
         </div>
         <div className="current-certi-main">
@@ -25,13 +23,11 @@ function CurrentNft() {
             <img src={dnft} alt="" className="nfts-img4" />
           </div>
           <div className="current-certi-info">
-            <div>
-              <h3>NFT Name</h3>
-              <p>Secondory Text</p>
-            </div>
-            <div className="current-certi-mainbtn">
-              <button className="current-button">Generate Certificate</button>
-            </div>
+            <h3>NFT Name</h3>
+            <p>Secondory Text</p>
+          </div>
+          <div className="current-certi-mainbtn">
+            <button className="current-button">Generate Certificate</button>
           </div>
         </div>{" "}
         <div className="current-certi-main">
@@ -39,13 +35,11 @@ function CurrentNft() {
             <img src={dnft} alt="" className="nfts-img4" />
           </div>
           <div className="current-certi-info">
-            <div>
-              <h3>NFT Name</h3>
-              <p>Secondory Text</p>
-            </div>
-            <div className="current-certi-mainbtn">
-              <button className="current-button">Generate Certificate</button>
-            </div>
+            <h3>NFT Name</h3>
+            <p>Secondory Text</p>
+          </div>
+          <div className="current-certi-mainbtn">
+            <button className="current-button">Generate Certificate</button>
           </div>
         </div>
         <div className="current-certi-main">
@@ -53,13 +47,11 @@ function CurrentNft() {
             <img src={dnft} alt="" className="nfts-img4" />
           </div>
           <div className="current-certi-info">
-            <div>
-              <h3>NFT Name</h3>
-              <p>Secondory Text</p>
-            </div>
-            <div className="current-certi-mainbtn">
-              <button className="current-button">Generate Certificate</button>
-            </div>
+            <h3>NFT Name</h3>
+            <p>Secondory Text</p>
+          </div>
+          <div className="current-certi-mainbtn">
+            <button className="current-button">Generate Certificate</button>
           </div>
         </div>{" "}
         <div className="current-certi-main">
@@ -67,13 +59,11 @@ function CurrentNft() {
             <img src={dnft} alt="" className="nfts-img4" />
           </div>
           <div className="current-certi-info">
-            <div>
-              <h3>NFT Name</h3>
-              <p>Secondory Text</p>
-            </div>
-            <div className="current-certi-mainbtn">
-              <button className="current-button">Generate Certificate</button>
-            </div>
+            <h3>NFT Name</h3>
+            <p>Secondory Text</p>
+          </div>
+          <div className="current-certi-mainbtn">
+            <button className="current-button">Generate Certificate</button>
           </div>
         </div>
       </div>

@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  /* background-image: url("../assests/images/Background-navbar.svg"); */
 }
 
 .App-link {
@@ -47,4 +48,7 @@
 }
 .font-face-gm-thin {
   font-family: "JosefinSans-Thin";
+}
+.font-face-gm-aquire-bold {
+  font-family: "AquireBold-8Ma60";
 }
