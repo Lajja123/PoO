@@ -24,7 +24,10 @@ function OwnershipCertificate() {
                     {" "}
                     from Date:13/08/2005
                   </div>
-                  <div className="font-face-gm-aqiure"> To date:xx/xx/xxxx</div>
+                  <div className="font-face-gm-aqiure  owner-date2">
+                    {" "}
+                    To date:xx/xx/xxxx
+                  </div>
                 </div>
               </div>
             </div>
@@ -49,7 +52,10 @@ function OwnershipCertificate() {
                     {" "}
                     from Date:xx/xx/xxxx
                   </div>
-                  <div className="font-face-gm-aqiure"> To date:xx/xx/xxxx</div>
+                  <div className="font-face-gm-aqiure owner-date2">
+                    {" "}
+                    To date:xx/xx/xxxx
+                  </div>
                 </div>
               </div>
             </div>
@@ -73,7 +79,10 @@ function OwnershipCertificate() {
                     {" "}
                     from Date:xx/xx/xxxx
                   </div>
-                  <div className="font-face-gm-aqiure"> To date:xx/xx/xxxx</div>
+                  <div className="font-face-gm-aqiure owner-date2">
+                    {" "}
+                    To date:xx/xx/xxxx
+                  </div>
                 </div>
               </div>
             </div>
@@ -97,7 +106,10 @@ function OwnershipCertificate() {
                     {" "}
                     from Date:xx/xx/xxxx
                   </div>
-                  <div className="font-face-gm-aqiure"> To date:xx/xx/xxxx</div>
+                  <div className="font-face-gm-aqiure owner-date2">
+                    {" "}
+                    To date:xx/xx/xxxx
+                  </div>
                 </div>
               </div>
             </div>
@@ -121,7 +133,10 @@ function OwnershipCertificate() {
                     {" "}
                     from Date:xx/xx/xxxx
                   </div>
-                  <div className="font-face-gm-aqiure"> To date:xx/xx/xxxx</div>
+                  <div className="font-face-gm-aqiure owner-date2">
+                    {" "}
+                    To date:xx/xx/xxxx
+                  </div>
                 </div>
               </div>
             </div>
