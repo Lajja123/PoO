@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/singlecertificate.css";
 import dnft from "../assests/images/dummynft.png";
+import date from "../assests/images/date.svg";
 function CreationCertificate() {
   return (
     <>
@@ -42,8 +43,10 @@ function CreationCertificate() {
               <h3 className="creation-nft-details font-face-gm-medium">
                 NFT Details
               </h3>
+
               <div className="input-main">
                 <div className="datepicker">FROM </div>
+                <img src={date} alt="" className="certificate-date-icon" />
                 <input
                   type="text"
                   id="lname-create-certi"
@@ -54,6 +57,7 @@ function CreationCertificate() {
               </div>
               <div className="input-main">
                 <div className="datepicker">TO </div>
+                <img src={date} alt="" className="certificate-date-icon" />
                 <input
                   type="text"
                   className="date-input1"

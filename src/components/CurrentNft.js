@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import "../components/currentnft.css";
 import dnft from "../assests/images/dummynft.png";
 
