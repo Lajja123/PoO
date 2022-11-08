@@ -6,9 +6,10 @@ import Navbar from "./components/Navbar";
 import Registration from "./components/Registration";
 import OwnershipCertificate from "./components/OwnershipCertificate";
 import SingleCertificate from "./components/SingleCertificate";
-import CreationPage from "./components/CreationPage";
+// import CreationPage from "./components/CreationPage";
 import CurrentNft from "./components/CurrentNft";
 import PreviousNft from "./components/PreviousNft";
+import CreationCertificate from "./components/CreationCertificate";
 
 function App() {
   return (
@@ -29,7 +30,10 @@ function App() {
             path="/singlecertificate"
             element={<SingleCertificate />}
           ></Route>
-          <Route path="/creationpage" element={<CreationPage />}></Route>
+          <Route
+            path="/createcertificate"
+            element={<CreationCertificate />}
+          ></Route>
         </Routes>
       </Router>
     </div>

@@ -37,7 +37,7 @@ function Navbar() {
                 <img class="p-user" src={user} alt="Rounded avatar" />{" "}
               </div>
               <div className="download-btn">
-                <button className="navbar-button font-face-gm-aqiure">
+                <button className="navbar-button font-face-gm-bold ">
                   Logout
                 </button>
               </div>

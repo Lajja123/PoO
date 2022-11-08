@@ -3,15 +3,24 @@
   height: auto;
   margin: 0 auto;
   margin-top: 10%;
+  background-image: url("../assests/images/Bg.svg");
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  max-height: auto;
 }
 .nft-name {
   margin-right: 70%;
-  border-bottom: 1px solid gray;
+  border-bottom: 2px solid white;
   width: 50%;
-  margin-top: 20px;
+
   margin-left: 25%;
   text-align: left;
   font-size: 2rem;
+  color: white;
 }
 
 .p-single-certficate {
@@ -37,9 +46,10 @@
 }
 .cetificate-name {
   margin-right: 70%;
-  border-bottom: 1px solid gray;
+  color: white;
+  border-bottom: 2px solid white;
   width: 50%;
-  margin-top: 50px;
+  margin-top: 70px;
   margin-left: 25%;
   text-align: left;
   font-size: 2rem;
@@ -49,12 +59,8 @@
   margin: 0 auto;
   width: 50%;
   margin-top: 30px;
-  border-radius: 100px;
-  background: radial-gradient(
-    circle,
-    rgba(248, 205, 63, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  border-radius: 50px;
+  background-color: #00566a;
 }
 .p-signle-certificate-content {
   display: flex;
@@ -63,34 +69,63 @@
   position: relative;
   margin-top: 100px;
   left: 30px;
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   text-align: justify;
 }
 .singlecertificate-nfts-img4 {
   width: 50%;
   padding: 50px;
+  border-radius: 100px;
 }
 .p-section2-certificate {
   margin-top: 10%;
 }
 .p-certificate {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 3rem;
+  color: white;
+  letter-spacing: 5px;
 }
 .certi-nft-details {
   margin-bottom: 20px;
 }
 .p-owner-name {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: #f8cd3f;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-
+.p-owner-title {
+  color: white;
+  font-weight: 700;
+  background-color: #80abb5;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  width: 10vw;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.date-of-certi {
+  color: white;
+  font-size: 1.3rem;
+  /* letter-spacing: 1px; */
+  text-transform: uppercase;
+}
 /* ......................creation certificate css................... */
 
 .p-creation-certi-main {
-  width: 100%;
-  height: auto;
   margin: 0 auto;
-  margin-top: 10%;
+
+  background-image: url("../assests/images/Bg.svg");
+  width: 100%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  max-height: auto;
 }
 .p-creation-certficate {
   display: flex;
@@ -98,11 +133,12 @@
   width: 50%;
   margin-top: 30px;
   border-radius: 10px;
-  box-shadow: 0px 0px 6px 5px #eff0ee;
+  /* box-shadow: 0px 0px 6px 5px #eff0ee; */
 }
 .creation-certi-info {
   position: relative;
   margin: 0 auto;
+  margin-right: 50px;
   text-align: justify;
   margin-top: 30px;
   font-size: 1.3rem;
@@ -110,19 +146,37 @@
 }
 .creation-nft-details {
   margin-top: 20px;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 .creation-date {
-  margin-top: 20px;
+  background-color: #eff0ee;
 }
 .creation-date2 {
-  margin-top: 5px;
+  background-color: #eff0ee;
 }
 .p-mint-nft {
-  background-color: #00566a;
+  background-color: #f16386;
   color: white;
   width: 10rem;
   height: 3rem;
-  border-radius: 10px;
+  border-radius: 50px;
   margin-top: 50px;
   font-size: 1rem;
+}
+.create-certi-div2 {
+  padding-top: 10%;
+}
+#lname-create-certi {
+  border-radius: 10px;
+  padding: 10px;
+}
+#lname-create-certi::placeholder {
+  color: gray;
+  font-size: large;
+  padding-left: 40px;
+}
+.datepicker {
+  color: gray;
 }
