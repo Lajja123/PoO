@@ -16,19 +16,19 @@ function OwnershipCertificate() {
             </div>
 
             <div className="ownership-certi-info">
-              <div>
+              <div className="certi-info1">
                 <h3>Ownership Certificate</h3>
               </div>
-              <div> Date: xx/xx/xxxx To xx/xx/xxxx</div>
-            </div>
-            <div className="p-btn-main">
-              <button className="ownership-btn">
-                Share Certificate <Link to="/singlecertificate"></Link>
-              </button>
+              <div className="certi-info2"> Date: xx/xx/xxxx To xx/xx/xxxx</div>
             </div>
           </div>
+          <div className="p-btn-main">
+            <button className="ownership-btn">
+              Share Certificate <Link to="/singlecertificate"></Link>
+            </button>
+          </div>
         </div>
-        <div className="ownership-flex-container">
+        {/* <div className="ownership-flex-container">
           <div className="ownrship-certi-main">
             <div className="ownership-certi-img">
               <img src={ownnft2} alt="" className="nfts-img4" />
@@ -104,7 +104,7 @@ function OwnershipCertificate() {
               </Link>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

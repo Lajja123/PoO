@@ -1,9 +1,6 @@
 .main-header {
   position: fixed;
-  /* background-image: url("../assests/images/Background-navbar.svg"); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: #00566a;
   right: 0;
   left: 0;
   padding: 5px;
@@ -36,28 +33,41 @@ li.submenu {
 }
 li.submenu:hover {
   cursor: pointer;
+  color: #f8cd3f;
+  border-bottom: #f8cd3f solid 1px;
 }
 
 .navigation-menu {
   display: flex;
   color: white;
+  text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
 }
 .navbar-button {
   width: 7rem;
   height: 3rem;
   font-weight: 500;
-  background-color: #00566a;
+  background-color: #f8cd3f;
   color: white;
+  letter-spacing: 2px;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
   border-radius: 30px;
 }
+
 .check-menu {
   display: none;
 }
 .p-user {
-  margin-right: 20px;
+  /* width: 50px; */
   width: 50px;
+  padding: 10px;
+}
+.user-img {
+  margin-right: 20px;
+  background-color: #f8cd3f;
+  border-radius: 100px;
 }

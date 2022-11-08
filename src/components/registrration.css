@@ -32,8 +32,8 @@
 }
 .register-icons1 {
   position: absolute;
-  margin-left: 75px;
-  margin-top: 30px;
+  margin-left: 5vw;
+  margin-top: 2vw;
 }
 .p-username {
   width: 80%;
@@ -59,7 +59,7 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
-  padding-top: 10%;
+  padding-top: 20px;
 }
 .HELLO {
   width: 100%;
@@ -72,5 +72,10 @@ input::placeholder {
   color: #f16386;
   font-family: "JosefinSans-Light";
   /* padding-left: ; */
-  font-size: 25px;
+  font-size: 1.5em;
+}
+.logo-register {
+  width: 10%;
+  position: relative;
+  top: 0;
 }

@@ -1,5 +1,5 @@
 import react, { useEffect } from "react";
-import user from "../assests/images/man.png";
+import user from "../assests/images/profile.png";
 import "../components/navbar.css";
 import { Link } from "react-router-dom";
 import logo from "../assests/images/logo1.png";
@@ -21,10 +21,10 @@ function Navbar() {
               <div className="navigation ">
                 <ul className="navigation-menu font-face-gm">
                   <li className="submenu home-nav ">
-                    <Link to="/currentnft">Currently Owned NFT's</Link>
+                    <Link to="/currentnft">Currently Owned NFTs</Link>
                   </li>
                   <li className="submenu">
-                    <Link to="/previousnft">Previously Owned NFT's</Link>
+                    <Link to="/previousnft">Previously Owned NFTs</Link>
                   </li>
                   <li className="submenu">
                     <Link to="/ownershipcertificate">
