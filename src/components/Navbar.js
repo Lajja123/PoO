@@ -3,11 +3,22 @@ import user from "../assests/images/profile.png";
 import "../components/navbar.css";
 import { Link } from "react-router-dom";
 import logo from "../assests/images/logo1.png";
+import { useLocation } from "react-router-dom";
+import { useRef } from "react";
 
 function Navbar() {
+  let location = useLocation();
   useEffect(() => {
     console.log(window.location.pathname);
-  }, []);
+    console.log(window.location.pathname);
+    if (
+      window.location.pathname === "/" &&
+      window.location.pathname === "/register"
+    ) {
+      window.location.reload();
+    }
+  }, [location]);
+
   return (
     <>
       {window.location.pathname !== "/" &&
@@ -15,7 +26,9 @@ function Navbar() {
         <div className="main-header">
           <div className="header-container">
             <div className="logo">
-              <img src={logo} className="logo-navbar" />
+              <Link to="/profile">
+                <img src={logo} className="logo-navbar" />
+              </Link>
             </div>
             <div className="left-navbar">
               <div className="navigation ">

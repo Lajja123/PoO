@@ -47,24 +47,29 @@ function CreationCertificate() {
               <div className="input-main">
                 <div className="datepicker">FROM </div>
                 <img src={date} alt="" className="certificate-date-icon" />
-                <input
-                  type="text"
-                  id="lname-create-certi"
-                  name="lname"
-                  className="date-input1"
-                  placeholder="DD/MM/YYYY"
-                />
+                <div className="div5">
+                  <input
+                    type="text"
+                    id="lname-create-certi"
+                    name="lname"
+                    className="date-input1"
+                    placeholder="DD/MM/YYYY"
+                  />
+                </div>
               </div>
+
               <div className="input-main">
                 <div className="datepicker">TO </div>
                 <img src={date} alt="" className="certificate-date-icon" />
-                <input
-                  type="text"
-                  className="date-input1"
-                  id="lname-create-certi"
-                  name="lname-create-certi"
-                  placeholder="DD/MM/YYYY"
-                />
+                <div className="div5">
+                  <input
+                    type="text"
+                    className="date-input1"
+                    id="lname-create-certi"
+                    name="lname-create-certi"
+                    placeholder="DD/MM/YYYY"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -97,7 +102,7 @@ function CreationCertificate() {
               </div>
             </div>
           </div>
-          <button className="p-mint-nft font-face-gm-bold">Mint NFT</button>
+          <button className="p-mint-nft font-face-gm-bold">MINT NFT</button>
         </div>
       </div>
     </>

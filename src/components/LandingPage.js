@@ -20,14 +20,16 @@ import certiImg from "../assests/images/certificate-img.svg";
 import verify from "../assests/images/verify.svg";
 
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function LandingPage() {
   const [walletAddress, setWalletAddress] = useState("");
+  const navigate = useNavigate();
+
   useEffect(() => {
-    getCurrentWalletConnected();
-    addWalleteListener();
-  });
+    // getCurrentWalletConnected();
+    // addWalleteListener();
+  }, []);
   const connectWallet = async () => {
     if (typeof window != "undefined" && window.ethereum != "undefined") {
       try {
@@ -35,6 +37,7 @@ function LandingPage() {
           method: "eth_requestAccounts",
         });
         setWalletAddress(account[0]);
+        navigate("/profile");
         console.log(account[0]);
       } catch (err) {
         console.error(err.message);
@@ -60,7 +63,7 @@ function LandingPage() {
         console.error(err.message);
       }
     } else {
-      console.log("Please Install Metamast");
+      alert("Please Install Metamast");
     }
   };
 
@@ -81,7 +84,9 @@ function LandingPage() {
         <div className="poo-section1-landingpage">
           <div className="p-navbar-main">
             <button
-              onClick={connectWallet}
+              onClick={() => {
+                connectWallet();
+              }}
               className="p-connect-btn font-face-gm-aqiure"
             >
               {walletAddress && walletAddress.length > 0

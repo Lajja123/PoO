@@ -70,6 +70,7 @@ function SingleCertificate() {
               </div>
             </div>
           </div>
+          <button className="p-mint-nft font-face-gm-bold">SHARE</button>
         </div>
       </div>
     </>

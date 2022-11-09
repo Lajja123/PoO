@@ -10,6 +10,7 @@ import SingleCertificate from "./components/SingleCertificate";
 import CurrentNft from "./components/CurrentNft";
 import PreviousNft from "./components/PreviousNft";
 import CreationCertificate from "./components/CreationCertificate";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             path="/createcertificate"
             element={<CreationCertificate />}
           ></Route>
+          <Route path="/profile" element={<Profile />}></Route>
         </Routes>
       </Router>
     </div>

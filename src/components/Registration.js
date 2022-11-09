@@ -10,7 +10,7 @@ function Registration() {
     <>
       <div className="HELLO">
         <div className="p-signup-main-div">
-          <div className="logo">
+          <div className="logo-register-main">
             <img src={logo} className="logo-register" />
           </div>
           <div className="signup-title font-face-gm-aqiure">REGISTER HERE</div>
