@@ -2,6 +2,8 @@ import React from "react";
 import "../components/singlecertificate.css";
 import dnft from "../assests/images/dummynft.png";
 import date from "../assests/images/date.svg";
+import { Link } from "react-router-dom";
+
 function SingleCertificate() {
   return (
     <>

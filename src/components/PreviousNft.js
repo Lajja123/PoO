@@ -1,6 +1,7 @@
 import react from "react";
 import "../components/currentnft.css";
 import dnft from "../assests/images/dummynft.png";
+import { Link } from "react-router-dom";
 
 function PreviousNft() {
   return (
@@ -18,11 +19,11 @@ function PreviousNft() {
                   <p className="font-face-gm-aqiure">Secondory Text</p>
                 </div>
                 <div className="current-certi-mainbtn">
-                  <a href="http://localhost:3000/creationpage">
+                  <Link to="/createcertificate">
                     <button className="current-button font-face-gm-aquire-bold">
                       Generate Certificate
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -38,11 +39,11 @@ function PreviousNft() {
                   <p className="font-face-gm-aqiure">Secondory Text</p>
                 </div>
                 <div className="current-certi-mainbtn">
-                  <a href="http://localhost:3000/creationpage">
+                  <Link to="/createcertificate">
                     <button className="current-button font-face-gm-aquire-bold">
                       Generate Certificate
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -58,11 +59,11 @@ function PreviousNft() {
                   <p className="font-face-gm-aqiure">Secondory Text</p>
                 </div>
                 <div className="current-certi-mainbtn">
-                  <a href="http://localhost:3000/creationpage">
+                  <Link to="/createcertificate">
                     <button className="current-button font-face-gm-aquire-bold">
                       Generate Certificate
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -78,11 +79,11 @@ function PreviousNft() {
                   <p className="font-face-gm-aqiure">Secondory Text</p>
                 </div>
                 <div className="current-certi-mainbtn">
-                  <a href="http://localhost:3000/creationpage">
+                  <Link to="/createcertificate">
                     <button className="current-button font-face-gm-aquire-bold">
                       Generate Certificate
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -98,11 +99,11 @@ function PreviousNft() {
                   <p className="font-face-gm-aqiure">Secondory Text</p>
                 </div>
                 <div className="current-certi-mainbtn">
-                  <a href="http://localhost:3000/creationpage">
+                  <Link to="/createcertificate">
                     <button className="current-button font-face-gm-aquire-bold">
                       Generate Certificate
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

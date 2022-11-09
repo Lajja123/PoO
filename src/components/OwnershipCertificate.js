@@ -31,10 +31,12 @@ function OwnershipCertificate() {
                 </div>
               </div>
             </div>
-            <div className="p-btn-main">
-              <button className="ownership-btn  font-face-gm-aquire-bold">
-                Share Certificate <Link to="/singlecertificate"></Link>
-              </button>
+            <div className="p-btn-main ">
+              <Link to="/singlecertificate">
+                <button className="ownership-btn  font-face-gm-aquire-bold ">
+                  Share Certificate
+                </button>
+              </Link>
             </div>
           </div>
 
@@ -59,64 +61,12 @@ function OwnershipCertificate() {
                 </div>
               </div>
             </div>
-            <div className="p-btn-main">
-              <button className="ownership-btn  font-face-gm-aquire-bold">
-                Share Certificate <Link to="/singlecertificate"></Link>
-              </button>
-            </div>
-          </div>
-          <div className="div-box-owned">
-            <div className="ownrship-certi-main">
-              <div className="ownership-certi-img">
-                <img src={dnft} alt="" className="nfts-img4" />
-              </div>
-              <div className="ownership-certi-info">
-                <div className="font-face-gm-aquire-bold ">
-                  <h3>Ownership Certificate</h3>
-                </div>
-                <div className="date-flex">
-                  <div className="font-face-gm-aqiure">
-                    {" "}
-                    from Date:xx/xx/xxxx
-                  </div>
-                  <div className="font-face-gm-aqiure owner-date2">
-                    {" "}
-                    To date:xx/xx/xxxx
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-btn-main">
-              <button className="ownership-btn  font-face-gm-aquire-bold">
-                Share Certificate <Link to="/singlecertificate"></Link>
-              </button>
-            </div>
-          </div>
-          <div className="div-box-owned">
-            <div className="ownrship-certi-main">
-              <div className="ownership-certi-img">
-                <img src={dnft} alt="" className="nfts-img4" />
-              </div>
-              <div className="ownership-certi-info">
-                <div className="font-face-gm-aquire-bold ">
-                  <h3>Ownership Certificate</h3>
-                </div>
-                <div className="date-flex">
-                  <div className="font-face-gm-aqiure">
-                    {" "}
-                    from Date:xx/xx/xxxx
-                  </div>
-                  <div className="font-face-gm-aqiure owner-date2">
-                    {" "}
-                    To date:xx/xx/xxxx
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-btn-main">
-              <button className="ownership-btn  font-face-gm-aquire-bold">
-                Share Certificate <Link to="/singlecertificate"></Link>
-              </button>
+            <div className="p-btn-main ">
+              <Link to="/singlecertificate">
+                <button className="ownership-btn  font-face-gm-aquire-bold ">
+                  Share Certificate
+                </button>
+              </Link>
             </div>
           </div>
           <div className="div-box-owned">
@@ -141,9 +91,69 @@ function OwnershipCertificate() {
               </div>
             </div>
             <div className="p-btn-main ">
-              <button className="ownership-btn  font-face-gm-aquire-bold ">
-                Share Certificate <Link to="/singlecertificate"></Link>
-              </button>
+              <Link to="/singlecertificate">
+                <button className="ownership-btn  font-face-gm-aquire-bold ">
+                  Share Certificate
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className="div-box-owned">
+            <div className="ownrship-certi-main">
+              <div className="ownership-certi-img">
+                <img src={dnft} alt="" className="nfts-img4" />
+              </div>
+              <div className="ownership-certi-info">
+                <div className="font-face-gm-aquire-bold ">
+                  <h3>Ownership Certificate</h3>
+                </div>
+                <div className="date-flex">
+                  <div className="font-face-gm-aqiure">
+                    {" "}
+                    from Date:xx/xx/xxxx
+                  </div>
+                  <div className="font-face-gm-aqiure owner-date2">
+                    {" "}
+                    To date:xx/xx/xxxx
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="p-btn-main ">
+              <Link to="/singlecertificate">
+                <button className="ownership-btn  font-face-gm-aquire-bold ">
+                  Share Certificate
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className="div-box-owned">
+            <div className="ownrship-certi-main">
+              <div className="ownership-certi-img">
+                <img src={dnft} alt="" className="nfts-img4" />
+              </div>
+              <div className="ownership-certi-info">
+                <div className="font-face-gm-aquire-bold ">
+                  <h3>Ownership Certificate</h3>
+                </div>
+                <div className="date-flex">
+                  <div className="font-face-gm-aqiure">
+                    {" "}
+                    from Date:xx/xx/xxxx
+                  </div>
+                  <div className="font-face-gm-aqiure owner-date2">
+                    {" "}
+                    To date:xx/xx/xxxx
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="p-btn-main ">
+              <Link to="/singlecertificate">
+                <button className="ownership-btn  font-face-gm-aquire-bold ">
+                  Share Certificate
+                </button>
+              </Link>
             </div>
           </div>
         </div>

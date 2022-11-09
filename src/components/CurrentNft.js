@@ -1,6 +1,7 @@
 import React from "react";
 import "../components/currentnft.css";
 import dnft from "../assests/images/dummynft.png";
+import { Link } from "react-router-dom";
 
 function CurrentNft() {
   return (
@@ -19,9 +20,11 @@ function CurrentNft() {
                 </div>
               </div>
               <div className="current-certi-mainbtn">
-                <button className="current-button font-face-gm-aquire-bold">
-                  Generate Certificate
-                </button>
+                <Link to="/createcertificate">
+                  <button className="current-button font-face-gm-aquire-bold">
+                    Generate Certificate
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -37,9 +40,11 @@ function CurrentNft() {
                 </div>
               </div>
               <div className="current-certi-mainbtn">
-                <button className="current-button font-face-gm-aquire-bold">
-                  Generate Certificate
-                </button>
+                <Link to="/createcertificate">
+                  <button className="current-button font-face-gm-aquire-bold">
+                    Generate Certificate
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -55,9 +60,11 @@ function CurrentNft() {
                 </div>
               </div>
               <div className="current-certi-mainbtn">
-                <button className="current-button font-face-gm-aquire-bold">
-                  Generate Certificate
-                </button>
+                <Link to="/createcertificate">
+                  <button className="current-button font-face-gm-aquire-bold">
+                    Generate Certificate
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -73,9 +80,11 @@ function CurrentNft() {
                 </div>
               </div>
               <div className="current-certi-mainbtn">
-                <button className="current-button font-face-gm-aquire-bold">
-                  Generate Certificate
-                </button>
+                <Link to="/createcertificate">
+                  <button className="current-button font-face-gm-aquire-bold">
+                    Generate Certificate
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -91,9 +100,11 @@ function CurrentNft() {
                 </div>
               </div>
               <div className="current-certi-mainbtn">
-                <button className="current-button font-face-gm-aquire-bold">
-                  Generate Certificate
-                </button>
+                <Link to="/createcertificate">
+                  <button className="current-button font-face-gm-aquire-bold">
+                    Generate Certificate
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
