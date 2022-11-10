@@ -196,9 +196,11 @@ function LandingPage() {
                 </div>
 
                 <div className="p-certi-content3">
-                  <div className="font-face-gm">Ownership Periods</div>
+                  <div className="font-face-gm ownership-periods">
+                    Ownership Periods
+                  </div>
                   <div className="font-face-gm-thin">
-                    10th Oct 2022 To 12th Oct 2022
+                    10th Oct 2022 - 12th Oct 2022
                   </div>
                 </div>
                 <div className="p-certi-content">
