@@ -18,7 +18,7 @@
   grid-template-columns: auto auto auto auto;
   grid-gap: 20px 50px;
   padding: 100px 100px 50px;
-  padding-top: 5%;
+  padding-top: 10%;
 }
 .current-nft-div2 {
   z-index: -1;

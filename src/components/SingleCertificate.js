@@ -3,6 +3,7 @@ import "../components/singlecertificate.css";
 import dnft from "../assests/images/dummynft.png";
 import date from "../assests/images/date.svg";
 import { Link } from "react-router-dom";
+import logo from "../assests/images/logo1.png";
 
 function SingleCertificate() {
   return (
@@ -20,24 +21,12 @@ function SingleCertificate() {
               <div className="input-main">
                 <div className="datepicker">FROM </div>
                 <img src={date} alt="" className="certificate-date-icon" />
-                <input
-                  type="text"
-                  id="lname-create-certi"
-                  name="lname"
-                  className="date-input1"
-                  placeholder="DD/MM/YYYY"
-                />
+                <h3 className="date-input1 font-face-gm">DD/MM/YYYY</h3>
               </div>
               <div className="input-main">
                 <div className="datepicker">TO </div>
                 <img src={date} alt="" className="certificate-date-icon" />
-                <input
-                  type="text"
-                  className="date-input1"
-                  id="lname-create-certi"
-                  name="lname-create-certi"
-                  placeholder="DD/MM/YYYY"
-                />
+                <h3 className="date-input1 font-face-gm">DD/MM/YYYY</h3>
               </div>
             </div>
           </div>
@@ -60,11 +49,29 @@ function SingleCertificate() {
                     Owner Name
                   </h3>
                   <h3 className="p-owner-title font-face-gm-bold">NFT Title</h3>
-                  <div className="date-of-certi font-face-gm-extralight">
-                    Owning From Date
+                  <div className="p-certi-content10">
+                    <div className="font-face-gm-extralight  owner-period1 ">
+                      Ownership Period
+                    </div>
+                    <div className="font-face-gm-extralight owner-period2">
+                      10th Oct 2022 To 12th Oct 2022
+                    </div>
                   </div>
-                  <div className="date-of-certi font-face-gm-extralight">
-                    Current Date
+                  <div className="p-certi-content11">
+                    <div className="font-face-gm-extralight">
+                      Nft was verified on
+                    </div>
+                    <div className="font-face-gm-extralight ">Verified By</div>
+                  </div>
+                  <div className="p-certi-content12">
+                    <div className="font-face-gm-extralight  owner-period3">
+                      17/10/2022
+                    </div>
+                    <img
+                      src={logo}
+                      alt=""
+                      className="p-nft-verifify own-verify "
+                    />
                   </div>
                 </div>
               </div>

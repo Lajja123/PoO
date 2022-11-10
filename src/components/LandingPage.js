@@ -17,7 +17,7 @@ import img8 from "../assests/images/img8.svg";
 import coin from "../assests/images/coin.svg";
 import certificate from "../assests/images/certificate.svg";
 import certiImg from "../assests/images/certificate-img.svg";
-import verify from "../assests/images/verify.svg";
+import verify from "../assests/images/logo1.png";
 
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -82,6 +82,9 @@ function LandingPage() {
     <>
       <section className="poo-main-section">
         <div className="poo-section1-landingpage">
+          <div className="logo-landingpage-main">
+            <img src={verify} className="logo-register" />
+          </div>
           <div className="p-navbar-main">
             <button
               onClick={() => {
@@ -177,6 +180,13 @@ function LandingPage() {
                 <img src={certiImg} alt="" className="p-nft-certificateImage" />
                 <div className="certi-title font-face-gm-extralight ">
                   Certificate Of Ownership
+                </div>
+
+                <div className="p-certi-content3">
+                  <div className="font-face-gm">Ownership Periods</div>
+                  <div className="font-face-gm-thin">
+                    10th Oct 2022 To 12th Oct 2022
+                  </div>
                 </div>
                 <div className="p-certi-content">
                   <div className="font-face-gm">Nft was verified on</div>

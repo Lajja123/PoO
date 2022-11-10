@@ -1,8 +1,21 @@
-import React from "react";
+// import React from "react";
 import "../components/singlecertificate.css";
 import dnft from "../assests/images/dummynft.png";
 import date from "../assests/images/date.svg";
+import React, { useRef } from "react";
+import * as htmlToImage from "html-to-image";
+import logo from "../assests/images/logo1.png";
 function CreationCertificate() {
+  // const domEl = useRef(null);
+
+  // const downloadImage = async () => {
+  //   const dataUrl = await htmlToImage.toPng(domEl.current);
+
+  //   const link = document.createElement("a");
+  //   link.download = "html-to-img.png";
+  //   link.href = dataUrl;
+  //   link.click();
+  // };
   return (
     <>
       {/* <div className="p-signle-certi-main">
@@ -48,13 +61,7 @@ function CreationCertificate() {
                 <div className="datepicker">FROM </div>
                 <img src={date} alt="" className="certificate-date-icon" />
                 <div className="div5">
-                  <input
-                    type="text"
-                    id="lname-create-certi"
-                    name="lname"
-                    className="date-input1"
-                    placeholder="DD/MM/YYYY"
-                  />
+                  <h3 className="date-input1 font-face-gm">DD/MM/YYYY</h3>
                 </div>
               </div>
 
@@ -62,13 +69,14 @@ function CreationCertificate() {
                 <div className="datepicker">TO </div>
                 <img src={date} alt="" className="certificate-date-icon" />
                 <div className="div5">
-                  <input
+                  <h3 className="date-input1 font-face-gm">DD/MM/YYYY</h3>
+                  {/* <input
                     type="text"
                     className="date-input1"
                     id="lname-create-certi"
                     name="lname-create-certi"
                     placeholder="DD/MM/YYYY"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
@@ -91,18 +99,37 @@ function CreationCertificate() {
                   <h3 className="p-owner-name font-face-gm-semibold">
                     Owner Name
                   </h3>
-                  <h3 className="p-owner-title font-face-gm-bold">NFT Title</h3>
-                  <div className="date-of-certi font-face-gm-extralight">
-                    Owning From Date
+                  <h3 className="p-owner-title">NFT Title</h3>
+                  <div className="p-certi-content10">
+                    <div className="font-face-gm-extralight  owner-period1 ">
+                      Ownership Period
+                    </div>
+                    <div className="font-face-gm-extralight owner-period2">
+                      10th Oct 2022 To 12th Oct 2022
+                    </div>
                   </div>
-                  <div className="date-of-certi font-face-gm-extralight">
-                    Current Date
+                  <div className="p-certi-content11">
+                    <div className="font-face-gm-extralight">
+                      Nft was verified on
+                    </div>
+                    <div className="font-face-gm-extralight ">Verified By</div>
+                  </div>
+                  <div className="p-certi-content12">
+                    <div className="font-face-gm-extralight  owner-period3">
+                      17/10/2022
+                    </div>
+                    <img
+                      src={logo}
+                      alt=""
+                      className="p-nft-verifify own-verify "
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <button className="p-mint-nft font-face-gm-bold">MINT NFT</button>
+          {/* <button onclick="{downloadImage}">Download Image</button> */}
         </div>
       </div>
     </>

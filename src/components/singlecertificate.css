@@ -65,12 +65,10 @@
 }
 .p-signle-certificate-content {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .single-certi-info2 {
-  position: relative;
-  margin-top: 100px;
-  left: 30px;
-  /* font-size: 1.3rem; */
   text-align: justify;
 }
 .singlecertificate-nfts-img4 {
@@ -142,12 +140,13 @@
   margin: 0 auto;
   margin-right: 50px;
   text-align: justify;
-  margin-top: 30px;
+  margin-top: 50px;
   font-size: 1.3rem;
   margin-bottom: 30px;
 }
 .creation-nft-details {
   margin-top: 20px;
+  margin-bottom: 20px;
   color: white;
   font-size: 2rem;
   text-transform: uppercase;
@@ -183,20 +182,71 @@
   padding-left: 40px;
 } */
 .datepicker {
-  color: gray;
+  color: #00566a;
 }
 .certificate-date-icon {
-  width: 18%;
+  width: 20%;
   position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 .date-input1 {
   /* padding-left: 20px; */
   text-indent: 50px;
   color: gray;
+  padding: 10px;
+
+  background-color: white;
+  border-radius: 10px;
 }
 .div5 input::-webkit-input-placeholder {
   color: #f16386;
   font-family: "JosefinSans-Light";
 
   font-size: 1.5rem;
+}
+.p-certi-content10 {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.p-certi-content11 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  /* font-size: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase; */
+}
+.p-certi-content12 {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+
+  text-transform: uppercase;
+}
+.owner-period2 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.owner-period1 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.own-verify {
+  width: 3vw;
+  margin-right: 20px;
+}
+.owner-period3 {
+  font-size: 1rem;
 }
