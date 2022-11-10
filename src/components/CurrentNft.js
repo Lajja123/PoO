@@ -4,11 +4,13 @@ import dnft from "../assests/images/dummynft.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
+
 function CurrentNft() {
 
   const [nftData, setNftData] = useState([]);
   let walletNftData = [];
   let transferNftData = [];
+
 
   const dataFetchedRef = useRef(false);
   useEffect(() => {
@@ -104,7 +106,7 @@ function CurrentNft() {
                           </div>
                         </div>
                         <div className="current-certi-mainbtn">
-                          <Link to="/createcertificate">
+                          <Link to={"/createcertificate"} state={{ data: item }}>
                             <button className="current-button font-face-gm-aquire-bold">
                               Generate Certificate
                             </button>

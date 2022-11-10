@@ -84,3 +84,14 @@
   align-items: center;
   margin-top: 30px;
 }
+
+@media screen and (max-width: 1024px) {
+  .profile-form-main {
+    width: 100%;
+  }
+  .profile-hero-section {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15%;
+  }
+}

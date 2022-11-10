@@ -250,3 +250,36 @@
 .owner-period3 {
   font-size: 1rem;
 }
+
+/* ///new */
+@media screen and (max-width: 1024px) {
+  .cetificate-name {
+    width: 70%;
+    margin-left: 16vw;
+  }
+  .p-single-certificate-ownership {
+    width: 70%;
+  }
+  .p-certificate {
+    font-size: 2rem;
+  }
+  .singlecertificate-nfts-img4 {
+    padding: 20px;
+  }
+  .single-certi-info2 {
+    padding: 10px;
+  }
+  .p-owner-title {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    /* padding: 10px; */
+    padding: 6px;
+  }
+  .own-verify {
+    width: 5vw;
+    margin-right: 30px;
+  }
+  .p-owner-name {
+    font-size: 1.5rem;
+  }
+}

@@ -18,6 +18,8 @@ import coin from "../assests/images/coin.svg";
 import certificate from "../assests/images/certificate.svg";
 import certiImg from "../assests/images/certificate-img.svg";
 import verify from "../assests/images/logo1.png";
+import Poo from "../artifacts/contracts/Poo.sol/Poo.json";
+import { ethers } from "ethers";
 
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -25,6 +27,10 @@ import { Link, useNavigate } from "react-router-dom";
 function LandingPage() {
   const [walletAddress, setWalletAddress] = useState("");
   const navigate = useNavigate();
+  const Poo_contract_address = "0x41abd4773aC12e1C68F8b16669B0fE383944EFB4";
+  const provider = new ethers.providers.Web3Provider(window.ethereum);
+  const signer = provider.getSigner();
+
 
   useEffect(() => {
     // getCurrentWalletConnected();
@@ -37,7 +43,14 @@ function LandingPage() {
           method: "eth_requestAccounts",
         });
         setWalletAddress(account[0]);
-        navigate("/profile");
+        const userDetails = new ethers.Contract(Poo_contract_address, Poo.abi, signer);
+        const fetchdata = await userDetails.getUser();
+        if (fetchdata.email === "") {
+          navigate("/register");
+        }
+        else {
+          navigate("/profile");
+        }
         console.log(account[0]);
       } catch (err) {
         console.error(err.message);
@@ -94,9 +107,9 @@ function LandingPage() {
             >
               {walletAddress && walletAddress.length > 0
                 ? `Connected: ${walletAddress.substring(
-                    0,
-                    6
-                  )}...${walletAddress.substring(38)}`
+                  0,
+                  6
+                )}...${walletAddress.substring(38)}`
                 : " Connect Wallet"}
             </button>
           </div>
