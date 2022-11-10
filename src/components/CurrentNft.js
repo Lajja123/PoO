@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 function CurrentNft() {
-
   const [nftData, setNftData] = useState([]);
   let walletNftData = [];
   let transferNftData = [];
@@ -17,13 +16,16 @@ function CurrentNft() {
     fetchCurrentNft();
   }, []);
   const fetchCurrentNft = async () => {
-
     var address = "0x6E212f16749300664e70496FDcf6F6e61f9E77E5";
     const walletnft = {
-      method: 'GET',
+      method: "GET",
       url: `https://deep-index.moralis.io/api/v2/${address}/nft`,
-      params: { chain: 'mumbai', format: 'decimal' },
-      headers: { accept: 'application/json', 'X-API-Key': 'zx1cuyNtlU6YfCw1ARlaDUSJQLXC5uXlfM9ebpJhJSTbbglLJs6sqvHEF9avPztV' }
+      params: { chain: "mumbai", format: "decimal" },
+      headers: {
+        accept: "application/json",
+        "X-API-Key":
+          "zx1cuyNtlU6YfCw1ARlaDUSJQLXC5uXlfM9ebpJhJSTbbglLJs6sqvHEF9avPztV",
+      },
     };
 
     await axios
@@ -36,10 +38,14 @@ function CurrentNft() {
       });
 
     const walletTransfers = {
-      method: 'GET',
+      method: "GET",
       url: `https://deep-index.moralis.io/api/v2/${address}/nft/transfers`,
-      params: { chain: 'mumbai', format: 'decimal', direction: 'both' },
-      headers: { accept: 'application/json', 'X-API-Key': 'zx1cuyNtlU6YfCw1ARlaDUSJQLXC5uXlfM9ebpJhJSTbbglLJs6sqvHEF9avPztV' }
+      params: { chain: "mumbai", format: "decimal", direction: "both" },
+      headers: {
+        accept: "application/json",
+        "X-API-Key":
+          "zx1cuyNtlU6YfCw1ARlaDUSJQLXC5uXlfM9ebpJhJSTbbglLJs6sqvHEF9avPztV",
+      },
     };
 
     await axios
@@ -52,35 +58,39 @@ function CurrentNft() {
       .catch(function (error) {
         console.error(error);
       });
-
-  }
+  };
 
   function getFinalNftData() {
-
     // console.log(transferNftData);
     // console.log(walletNftData);
     // console.log(walletNftData[0].result);
     for (let i = 0; i < walletNftData[0].result.length; i++) {
       for (let j = 0; j < transferNftData[0].result.length; j++) {
-        if (walletNftData[0].result[i]['token_address'] === transferNftData[0].result[j]['token_address'] &&
-          walletNftData[0].result[i].token_id === transferNftData[0].result[j].token_id) {
-          walletNftData[0].result[i] = { ...walletNftData[0].result[i], block_timestamp: transferNftData[0].result[j].block_timestamp };
+        if (
+          walletNftData[0].result[i]["token_address"] ===
+            transferNftData[0].result[j]["token_address"] &&
+          walletNftData[0].result[i].token_id ===
+            transferNftData[0].result[j].token_id
+        ) {
+          walletNftData[0].result[i] = {
+            ...walletNftData[0].result[i],
+            block_timestamp: transferNftData[0].result[j].block_timestamp,
+          };
           break;
         }
       }
     }
 
     for (let i = 0; i < walletNftData[0].result.length; i++) {
-      walletNftData[0].result[i].metadata = JSON.parse(walletNftData[0].result[i].metadata)
+      walletNftData[0].result[i].metadata = JSON.parse(
+        walletNftData[0].result[i].metadata
+      );
     }
     console.log(walletNftData[0].result.length);
-
 
     console.log(walletNftData);
     setNftData(walletNftData);
   }
-
-
 
   return (
     <>
@@ -88,36 +98,38 @@ function CurrentNft() {
         <div className="current-grid-container">
           {/* -------------------------------------------------- */}
           {nftData.map((item) => {
-            return (
-              item.result.map((item, i) => {
-                return (
-                  <div key={i} className="div-box-owned">{
-                    (item.metadata) !== null && item.name !== "Web3 Club Tour" ?
-                      <div className="current-certi-main">
-                        <div className="curren-certi-img">
-                          <img src={item.metadata.image} alt="" className="nfts-img4" />
+            return item.result.map((item, i) => {
+              return (
+                <div key={i} className="div-box-owned">
+                  {item.metadata !== null && item.name !== "Web3 Club Tour" ? (
+                    <div className="current-certi-main">
+                      <div className="curren-certi-img">
+                        <img
+                          src={item.metadata.image}
+                          alt=""
+                          className="nfts-img4"
+                        />
+                      </div>
+                      <div className="current-nft-flex">
+                        <div className="current-certi-info ">
+                          <h3 className="font-face-gm-aquire-bold">
+                            {item.metadata.name}
+                          </h3>
                         </div>
-                        <div className="current-nft-flex">
-                          <div className="current-certi-info ">
-                            <h3 className="font-face-gm-aquire-bold">{item.metadata.name}</h3>
-                            <p className="font-face-gm-aqiure">Secondory Text</p>
-                          </div>
-                        </div>
-                        <div className="current-certi-mainbtn">
-                          <Link to="/createcertificate">
-                            <button className="current-button font-face-gm-aquire-bold">
-                              Generate Certificate
-                            </button>
-                          </Link>
-                        </div>
-                      </div> : null}
-                  </div>
-                )
-              })
-            )
-
-          })
-          }
+                      </div>
+                      <div className="current-certi-mainbtn">
+                        <Link to="/createcertificate">
+                          <button className="current-button font-face-gm-aquire-bold">
+                            Generate Certificate
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              );
+            });
+          })}
           {/* ----------------------------------------------- */}
           {/* <div className="div-box-owned">
             <div className="current-certi-main">

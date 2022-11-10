@@ -77,3 +77,9 @@ li.submenu:hover {
 .logo {
   max-width: 450px;
 }
+/* ................responsive........................... */
+@media screen and (max-width: 1024px) {
+  .logo {
+    max-width: 600px;
+  }
+}

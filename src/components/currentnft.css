@@ -27,7 +27,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: auto;
+  height: 100vh;
   max-height: 100%;
 }
 .current-certi-main {
@@ -61,4 +61,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+/* .............res................. */
+
+@media screen and (max-width: 1024px) {
+  .current-button {
+    font-size: 0.7rem;
+  }
 }

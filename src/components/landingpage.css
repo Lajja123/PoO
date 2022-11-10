@@ -282,10 +282,10 @@
   position: absolute;
   /* top: 305%; */
   left: 48vw;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   justify-content: space-around;
   width: 25%;
-  margin-top: -29%;
+  margin-top: -27%;
 }
 .p-nft-verifify {
   width: 5vw;
@@ -296,7 +296,7 @@
   /* top: 280%; */
   width: 40%;
   color: #ffff;
-  right: 20vw;
+  right: 17vw;
   font-size: 3rem;
   word-spacing: 10px;
   letter-spacing: 5px;
@@ -316,6 +316,22 @@
     bottom: -17vh;
     left: 0;
     right: 0;
+  }
+  .ownership-periods {
+    font-size: 1.2rem;
+  }
+  .p-certi-content3 {
+    position: absolute;
+    /* top: 305%; */
+    left: 44vw;
+    font-size: 1rem;
+    justify-content: space-around;
+    width: 25%;
+    margin-top: -26%;
+  }
+  .certi-heading {
+    width: 70%;
+    margin-left: 15%;
   }
   .p-circle1-svg {
     margin-top: -25vw;
@@ -347,17 +363,20 @@
   }
   .certi-title {
     font-size: 2rem;
-    margin-top: -38%;
+    margin-top: -37%;
     right: 23vw;
   }
+
   .p-certi-content {
     font-size: 1.2rem;
-    margin-top: -26vw;
+    margin-top: -20vw;
     left: 43vw;
+    display: flex;
+    justify-content: space-between;
   }
   .p-certi-content2 {
     font-size: 1.2rem;
-    margin-top: -23vw;
+    margin-top: -18vw;
     left: 43vw;
   }
   .p-circle-main {
