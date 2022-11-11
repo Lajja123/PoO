@@ -4,15 +4,22 @@ import dnft from "../assests/images/dummynft.png";
 import date from "../assests/images/date.svg";
 import { Link } from "react-router-dom";
 import logo from "../assests/images/logo1.png";
+import { useLocation } from 'react-router-dom';
+
 
 function SingleCertificate() {
+
+  const location = useLocation();
+  const data = location.state.data;
+
+
   return (
     <>
       <div className="p-creation-certi-main">
         <div className="create-certi-div2">
           <div className="nft-name font-face-gm-aquire-bold"> NFT Name:</div>
           <div className="p-creation-certficate">
-            <img src={dnft} alt="" className="singlecertificate-nfts-img4" />
+            <img src={data.tokenIpfsUri} alt="" className="singlecertificate-nfts-img4" />
 
             <div className="creation-certi-info">
               <h3 className="creation-nft-details font-face-gm-medium">

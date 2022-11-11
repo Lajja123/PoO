@@ -102,7 +102,7 @@ function CurrentNft() {
                         <div className="current-nft-flex">
                           <div className="current-certi-info ">
                             <h3 className="font-face-gm-aquire-bold">{item.metadata.name}</h3>
-                            <p className="font-face-gm-aqiure">Secondory Text</p>
+                            <p className="font-face-gm-aqiure"></p>
                           </div>
                         </div>
                         <div className="current-certi-mainbtn">

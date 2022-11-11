@@ -77,7 +77,7 @@ function PreviousNft() {
         for (let j = 0; j < previousTransferNftData.length; j++) {
           if (
             perviousNftData[i]["token_address"] ===
-              previousTransferNftData[j]["token_address"] &&
+            previousTransferNftData[j]["token_address"] &&
             perviousNftData[i].token_id === previousTransferNftData[j].token_id
           ) {
             perviousNftData[i] = {
@@ -154,7 +154,7 @@ function PreviousNft() {
                         </h3>
                       </div>
                       <div className="current-certi-mainbtn">
-                        <Link to="/createcertificate">
+                        <Link to={"/createcertificate"} state={{ data: item }}>
                           <button className="current-button font-face-gm-aquire-bold">
                             Generate Certificate
                           </button>
