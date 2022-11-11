@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 
+
 function CurrentNft() {
 
   const [nftData, setNftData] = useState([]);
@@ -18,9 +19,13 @@ function CurrentNft() {
     dataFetchedRef.current = true;
     fetchCurrentNft();
   }, []);
+
+
   const fetchCurrentNft = async () => {
 
+    // console.log(address);
     var address = "0x6E212f16749300664e70496FDcf6F6e61f9E77E5";
+    // console.log(address);
     const walletnft = {
       method: 'GET',
       url: `https://deep-index.moralis.io/api/v2/${address}/nft`,

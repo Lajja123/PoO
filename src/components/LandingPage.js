@@ -1,4 +1,8 @@
 import React from "react";
+import Cookies from 'universal-cookie';
+
+// import UserProfile from './userProfile';
+
 import bigbg from "../assests/images/background.svg";
 import topwave from "../assests/images/top-waves.svg";
 import "../components/landingpage.css";
@@ -25,6 +29,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function LandingPage() {
+  const cookies = new Cookies();
   const [walletAddress, setWalletAddress] = useState("");
   const navigate = useNavigate();
   const Poo_contract_address = "0x41abd4773aC12e1C68F8b16669B0fE383944EFB4";
@@ -43,6 +48,11 @@ function LandingPage() {
           method: "eth_requestAccounts",
         });
         setWalletAddress(account[0]);
+        // UserProfile.setName(account[0]);
+        console.log(walletAddress);
+        console.log(account[0]);
+        // console.log(Cookies.get("wallet_address"));
+        // console.log(UserProfile.getName());
         const userDetails = new ethers.Contract(
           Poo_contract_address,
           Poo.abi,
@@ -111,9 +121,9 @@ function LandingPage() {
             >
               {walletAddress && walletAddress.length > 0
                 ? `Connected: ${walletAddress.substring(
-                    0,
-                    6
-                  )}...${walletAddress.substring(38)}`
+                  0,
+                  6
+                )}...${walletAddress.substring(38)}`
                 : " Connect Wallet"}
             </button>
           </div>

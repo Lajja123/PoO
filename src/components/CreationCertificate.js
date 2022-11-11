@@ -1,5 +1,6 @@
 // import React from "react";
 import "../components/singlecertificate.css";
+// import UserProfile from './userProfile';
 import Poo from "../artifacts/contracts/Poo.sol/Poo.json";
 import dnft from "../assests/images/dummynft.png";
 import date from "../assests/images/date.svg";
@@ -54,6 +55,7 @@ function CreationCertificate() {
     const fetchdata = await userDetails.getUser();
     setName(fetchdata);
     console.log(fetchdata);
+    // console.log(UserProfile.getName());
   };
 
   useEffect(() => {
@@ -190,10 +192,10 @@ function CreationCertificate() {
 
       <div className="p-creation-certi-main">
         <div className="create-certi-div2">
-          <div className="nft-name font-face-gm-aquire-bold"> NFT Name:</div>
+          <div className="nft-name font-face-gm-aquire-bold"> {datas.metadata.name}</div>
           <div className="nft-name font-face-gm-aquire-bold"> </div>
           <div className="p-creation-certficate">
-            {/* <img src={dnft} alt="" className="singlecertificate-nfts-img4" /> */}
+            <img src={datas.metadata.image} alt={datas.metadata.name} className="singlecertificate-nfts-image" />
 
             <div className="creation-certi-info">
               <h3 className="creation-nft-details font-face-gm-medium">
