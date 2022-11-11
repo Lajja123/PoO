@@ -6,10 +6,9 @@ import date from "../assests/images/date.svg";
 import React, { useRef, useState, useEffect } from "react";
 import * as htmlToImage from "html-to-image";
 import logo from "../assests/images/logo1.png";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import axios from "axios";
 import { ethers } from "ethers";
-
 
 function CreationCertificate() {
   const [name, setName] = useState();
@@ -21,7 +20,6 @@ function CreationCertificate() {
   const dataFetchedRef = useRef(false);
   const inputRef = useRef();
 
-
   const Poo_contract_address = "0x41abd4773aC12e1C68F8b16669B0fE383944EFB4";
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   const signer = provider.getSigner();
@@ -32,12 +30,14 @@ function CreationCertificate() {
   console.log(datas);
   console.log("Location", location.state.data);
 
-  const userDetails = new ethers.Contract(Poo_contract_address, Poo.abi, signer);
-
+  const userDetails = new ethers.Contract(
+    Poo_contract_address,
+    Poo.abi,
+    signer
+  );
 
   function dataURLtoFile(dataurl, filename) {
-
-    var arr = dataurl.split(','),
+    var arr = dataurl.split(","),
       mime = arr[0].match(/:(.*?);/)[1],
       bstr = atob(arr[1]),
       n = bstr.length,
@@ -51,26 +51,21 @@ function CreationCertificate() {
   }
 
   const getUser = async () => {
-
-
     const fetchdata = await userDetails.getUser();
     setName(fetchdata);
     console.log(fetchdata);
-
-  }
+  };
 
   useEffect(() => {
     if (dataFetchedRef.current) return;
     dataFetchedRef.current = true;
     getUser();
-
   }, []);
 
   const downloadImage = async () => {
-
     console.log("bhadresh");
     const dataUrl = await htmlToImage.toPng(domEl.current);
-    var file = dataURLtoFile(dataUrl, 'certificate.png');
+    var file = dataURLtoFile(dataUrl, "certificate.png");
     console.log(file);
     // console.log(dataUrl);
     // setTemp(dataUrl);
@@ -83,15 +78,13 @@ function CreationCertificate() {
     // inputRef.current.value = temp;
     // const input = document.getElementById("lname-create-certi").value;
     // console.log(input);
-
-  }
-
+  };
 
   const mintCertificate = async (e) => {
     e.preventDefault();
 
     const dataUrl = await htmlToImage.toPng(domEl.current);
-    var file = dataURLtoFile(dataUrl, 'hello.png');
+    var file = dataURLtoFile(dataUrl, "hello.png");
     console.log(file);
 
     // console.log(dataURIToBlob(dataUrl));
@@ -108,53 +101,62 @@ function CreationCertificate() {
     form.append("file", file);
 
     const options = {
-      method: 'POST',
-      url: 'https://api.nftport.xyz/v0/files',
+      method: "POST",
+      url: "https://api.nftport.xyz/v0/files",
       headers: {
-        'Content-Type': 'multipart/form-data; boundary=---011000010111000001101001',
-        Authorization: '3a00a5ae-f74a-4369-820d-8da1cc435690'
+        "Content-Type":
+          "multipart/form-data; boundary=---011000010111000001101001",
+        Authorization: "3a00a5ae-f74a-4369-820d-8da1cc435690",
       },
-      data: form
+      data: form,
     };
     console.log(options);
     e.preventDefault();
 
-    await axios.request(options).then(function (response) {
-      console.log(response.data);
-      console.log(response.data.ipfs_url);
+    await axios
+      .request(options)
+      .then(function (response) {
+        console.log(response.data);
+        console.log(response.data.ipfs_url);
 
-      imageUri = response.data.ipfs_url;
-    }).catch(function (error) {
-      console.error(error);
-    });
+        imageUri = response.data.ipfs_url;
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
 
     const metadata = {
-      method: 'POST',
-      url: 'https://api.nftport.xyz/v0/metadata',
+      method: "POST",
+      url: "https://api.nftport.xyz/v0/metadata",
       headers: {
-        'Content-Type': 'application/json',
-        Authorization: '3a00a5ae-f74a-4369-820d-8da1cc435690'
+        "Content-Type": "application/json",
+        Authorization: "3a00a5ae-f74a-4369-820d-8da1cc435690",
       },
       data: {
-        name: 'Ownership Certificate',
-        description: 'This is Certificate of Ownership Provided By POO',
-        file_url: imageUri
-      }
+        name: "Ownership Certificate",
+        description: "This is Certificate of Ownership Provided By POO",
+        file_url: imageUri,
+      },
     };
 
-    await axios.request(metadata).then(function (response) {
-      console.log(response.data);
-      metdataUri = response.data.metadata_uri
-    }).catch(function (error) {
-      console.error(error);
-    });
+    await axios
+      .request(metadata)
+      .then(function (response) {
+        console.log(response.data);
+        metdataUri = response.data.metadata_uri;
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
 
     const mintNft = new ethers.Contract(Poo_contract_address, Poo.abi, signer);
-    const mintNFT = await mintNft.storeCertificate("0xe57f4c84539a6414C4Cf48f135210e01c477EFE0", imageUri, false);
+    const mintNFT = await mintNft.storeCertificate(
+      "0xeB05322B3C154121AA9114C570e393033074E1E2",
+      imageUri,
+      false
+    );
     console.log(mintNFT);
-
-
-  }
+  };
 
   return (
     <>
@@ -188,6 +190,7 @@ function CreationCertificate() {
 
       <div className="p-creation-certi-main">
         <div className="create-certi-div2">
+          <div className="nft-name font-face-gm-aquire-bold"> NFT Name:</div>
           <div className="nft-name font-face-gm-aquire-bold"> </div>
           <div className="p-creation-certficate">
             {/* <img src={dnft} alt="" className="singlecertificate-nfts-img4" /> */}
@@ -201,7 +204,11 @@ function CreationCertificate() {
                 <div className="datepicker">FROM </div>
                 <img src={date} alt="" className="certificate-date-icon" />
                 <div className="div5">
-                  <h3 className="date-input1 font-face-gm">{datas.block_timestamp.slice(0, 10)}</h3>
+                  <h3 className="date-input1 font-face-gm">
+                    {datas.from_date === undefined
+                      ? datas.block_timestamp.slice(0, 10)
+                      : datas.from_date.slice(0, 10)}
+                  </h3>
                 </div>
               </div>
 
@@ -209,7 +216,11 @@ function CreationCertificate() {
                 <div className="datepicker">TO </div>
                 <img src={date} alt="" className="certificate-date-icon" />
                 <div className="div5">
-                  <h3 className="date-input1 font-face-gm">{datas.from_date === undefined ? new Date().toISOString().slice(0, 10) : datas.from_date.slice(0, 10)}</h3>
+                  <h3 className="date-input1 font-face-gm">
+                    {datas.from_date === undefined
+                      ? new Date().toISOString().slice(0, 10)
+                      : datas.block_timestamp.slice(0, 10)}
+                  </h3>
                   {/* <input
                     type="file"
                     className="date-input1"
@@ -220,7 +231,6 @@ function CreationCertificate() {
                     ref={inputRef}
 
                   /> */}
-
                 </div>
               </div>
             </div>
@@ -239,11 +249,11 @@ function CreationCertificate() {
                   <img
                     src={datas.metadata.image}
                     alt=""
-                    className="singlecertificate-nfts-img4"
+                    className="singlecertificate-nfts-img5"
                   />
                   <div className="single-certi-info2">
                     <h3 className="p-owner-name font-face-gm-semibold">
-                      Owned By : {name ? name.name : null}
+                      {name ? name.name : null}
                     </h3>
                     <h3 className="p-owner-title">{datas.metadata.name}</h3>
                     <div className="p-certi-content10">
@@ -251,14 +261,22 @@ function CreationCertificate() {
                         Ownership Period
                       </div>
                       <div className="font-face-gm-extralight owner-period2">
-                        {datas.block_timestamp.slice(0, 10)} To {datas.from_date === undefined ? "Present" : datas.from_date.slice(0, 10)}
+                        {datas.from_date === undefined
+                          ? datas.block_timestamp.slice(0, 10)
+                          : datas.from_date.slice(0, 10)}{" "}
+                        -{" "}
+                        {datas.from_date === undefined
+                          ? "Present"
+                          : datas.block_timestamp.slice(0, 10)}
                       </div>
                     </div>
                     <div className="p-certi-content11">
                       <div className="font-face-gm-extralight">
                         Nft was verified on
                       </div>
-                      <div className="font-face-gm-extralight ">Verified By</div>
+                      <div className="font-face-gm-extralight verify-by">
+                        Verified By
+                      </div>
                     </div>
                     <div className="p-certi-content12">
                       <div className="font-face-gm-extralight  owner-period3">
@@ -272,12 +290,16 @@ function CreationCertificate() {
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </div>
 
-          <button onClick={mintCertificate} className="p-mint-nft font-face-gm-bold">MINT NFT</button>
+          <button
+            onClick={mintCertificate}
+            className="p-mint-nft font-face-gm-bold"
+          >
+            MINT NFT
+          </button>
           {/* <button onclick={() => downloadImage()} >Download Image</button> */}
         </div>
       </div>

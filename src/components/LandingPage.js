@@ -30,7 +30,7 @@ function LandingPage() {
   const Poo_contract_address = "0x41abd4773aC12e1C68F8b16669B0fE383944EFB4";
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   const signer = provider.getSigner();
-
+  // console.log(signer);
 
   useEffect(() => {
     // getCurrentWalletConnected();
@@ -43,12 +43,16 @@ function LandingPage() {
           method: "eth_requestAccounts",
         });
         setWalletAddress(account[0]);
-        const userDetails = new ethers.Contract(Poo_contract_address, Poo.abi, signer);
+        const userDetails = new ethers.Contract(
+          Poo_contract_address,
+          Poo.abi,
+          signer
+        );
         const fetchdata = await userDetails.getUser();
+        console.log(fetchdata);
         if (fetchdata.email === "") {
           navigate("/register");
-        }
-        else {
+        } else {
           navigate("/profile");
         }
         console.log(account[0]);
@@ -107,9 +111,9 @@ function LandingPage() {
             >
               {walletAddress && walletAddress.length > 0
                 ? `Connected: ${walletAddress.substring(
-                  0,
-                  6
-                )}...${walletAddress.substring(38)}`
+                    0,
+                    6
+                  )}...${walletAddress.substring(38)}`
                 : " Connect Wallet"}
             </button>
           </div>

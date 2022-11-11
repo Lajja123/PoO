@@ -8,7 +8,6 @@ import { ethers } from "ethers";
 import Poo from "../artifacts/contracts/Poo.sol/Poo.json";
 
 function Registration() {
-
   const [userData, setUserData] = useState({ name: "", email: "" });
 
   const registerUser = async () => {
@@ -18,15 +17,21 @@ function Registration() {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
 
-    const registerUser = new ethers.Contract(Poo_contract_address, Poo.abi, signer);
-    // const saveUserData = await registerUser.registerUser(userData.name, userData.email, "");
+    const registerUser = new ethers.Contract(
+      Poo_contract_address,
+      Poo.abi,
+      signer
+    );
+    const saveUserData = await registerUser.registerUser(
+      userData.name,
+      userData.email,
+      ""
+    );
 
     // console.log(saveUserData);
     const fetchdata = await registerUser.getUser();
     console.log(fetchdata);
-  }
-
-
+  };
 
   return (
     <>
@@ -49,7 +54,7 @@ function Registration() {
                   placeholder="Username"
                   required
                   onChange={(e) => {
-                    setUserData({ ...userData, name: e.target.value })
+                    setUserData({ ...userData, name: e.target.value });
                   }}
                 />
               </div>
@@ -64,7 +69,7 @@ function Registration() {
                   placeholder="Email"
                   required
                   onChange={(e) => {
-                    setUserData({ ...userData, email: e.target.value })
+                    setUserData({ ...userData, email: e.target.value });
                   }}
                 />
               </div>
@@ -84,7 +89,8 @@ function Registration() {
                 <button
                   type="button"
                   class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium  rounded-full border signup-btn font-face-gm-aquire-bold"
-                  onClick={() => registerUser()}>
+                  onClick={() => registerUser()}
+                >
                   REGISTER
                 </button>
               </div>
