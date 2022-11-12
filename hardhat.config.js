@@ -15,12 +15,12 @@ module.exports = {
     polygon: {
       chainId: 80001,
       url: "https://polygon-mumbai.g.alchemy.com/v2/zy0YskI1Q19N6MsIo4KWq2goniaYKTix",
-      accounts: ["31557b9f24da29f196bd609b44d84033fc3f3787020f4ee148a72e79d1ae64f8"],
+      accounts: [""], //private key
     },
     goerli: {
       chainId: 05,
       url: "https://eth-goerli.g.alchemy.com/v2/welDuFTBZcdINPCirTOy4UgeEfOPmsRp",
-      accounts: ["31557b9f24da29f196bd609b44d84033fc3f3787020f4ee148a72e79d1ae64f8"],
+      accounts: [""], //private key
     }
   }
 };
