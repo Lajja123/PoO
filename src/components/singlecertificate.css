@@ -50,7 +50,7 @@
   color: white;
   border-bottom: 2px solid white;
   width: 50%;
-  /* margin-top: 70px; */
+  margin-top: 70px;
   margin-left: 25%;
   text-align: left;
   font-size: 2rem;
@@ -148,7 +148,7 @@
 }
 .singlecertificate-nfts-image {
   width: 20vw;
-  border-radius: 10px ;
+  border-radius: 10px;
   height: 250px;
 }
 /* ......................creation certificate css................... */
@@ -180,7 +180,7 @@
   margin: 0 auto;
   margin-right: 50px;
   text-align: justify;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   font-size: 1.3rem;
   margin-bottom: 30px;
 }
@@ -290,10 +290,14 @@
 .owner-period3 {
   font-size: 1rem;
 }
-.certificate-main {
+/* .certificate-main {
   margin-left: 50px;
+} */
+.spinner-mint {
+  margin-left: 60px;
 }
-/* ///new */
+
+/* ///new responsive */
 @media screen and (max-width: 1024px) {
   .cetificate-name {
     width: 70%;

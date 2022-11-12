@@ -24,13 +24,12 @@ function PreviousNft() {
   }, []);
 
   const fetchpreviousNft = async () => {
-
     const account = await window.ethereum.request({
       method: "eth_requestAccounts",
     });
 
-    var address = account[0];
-    // var address = "0x6E212f16749300664e70496FDcf6F6e61f9E77E5";
+    // var address = account[0];
+    var address = "0x6E212f16749300664e70496FDcf6F6e61f9E77E5";
     const options = {
       method: "GET",
       url: `https://deep-index.moralis.io/api/v2/${address}/nft/transfers`,
@@ -83,7 +82,7 @@ function PreviousNft() {
         for (let j = 0; j < previousTransferNftData.length; j++) {
           if (
             perviousNftData[i]["token_address"] ===
-            previousTransferNftData[j]["token_address"] &&
+              previousTransferNftData[j]["token_address"] &&
             perviousNftData[i].token_id === previousTransferNftData[j].token_id
           ) {
             perviousNftData[i] = {

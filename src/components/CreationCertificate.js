@@ -10,11 +10,14 @@ import logo from "../assests/images/logo1.png";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 import { ethers } from "ethers";
+import { useNavigate } from "react-router-dom";
+import spin from "../assests/images/spinner.gif";
 
 function CreationCertificate() {
+  const [loader, setLoader] = useState(false);
   const [name, setName] = useState();
   const [temp, setTemp] = useState();
-
+  const navigate = useNavigate();
   const domEl = useRef(null);
   let metdataUri = "";
   let imageUri = "";
@@ -83,6 +86,7 @@ function CreationCertificate() {
   };
 
   const mintCertificate = async (e) => {
+    setLoader(true);
     e.preventDefault();
 
     const dataUrl = await htmlToImage.toPng(domEl.current);
@@ -164,6 +168,8 @@ function CreationCertificate() {
       false
     );
     console.log(mintNFT);
+    setLoader(false);
+    navigator("/ownershipcertificate");
   };
 
   return (
@@ -198,10 +204,17 @@ function CreationCertificate() {
 
       <div className="p-creation-certi-main">
         <div className="create-certi-div2">
-          <div className="nft-name font-face-gm-aquire-bold"> {datas.metadata.name}</div>
+          <div className="nft-name font-face-gm-aquire-bold">
+            {" "}
+            {datas.metadata.name}
+          </div>
           <div className="nft-name font-face-gm-aquire-bold"> </div>
           <div className="p-creation-certficate">
-            <img src={datas.metadata.image} alt={datas.metadata.name} className="singlecertificate-nfts-image" />
+            <img
+              src={datas.metadata.image}
+              alt={datas.metadata.name}
+              className="singlecertificate-nfts-image"
+            />
 
             <div className="creation-certi-info">
               <h3 className="creation-nft-details font-face-gm-medium">
@@ -306,7 +319,16 @@ function CreationCertificate() {
             onClick={mintCertificate}
             className="p-mint-nft font-face-gm-bold"
           >
-            MINT NFT
+            {loader ? (
+              <img
+                src={spin}
+                height="100"
+                width="40"
+                className="spinner-mint"
+              />
+            ) : (
+              "MINT NFT"
+            )}
           </button>
           {/* <button onclick={() => downloadImage()} >Download Image</button> */}
         </div>
