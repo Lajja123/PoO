@@ -222,9 +222,9 @@ function LandingPage() {
             >
               {walletAddress && walletAddress.length > 0
                 ? `Connected: ${walletAddress.substring(
-                    0,
-                    6
-                  )}...${walletAddress.substring(38)}`
+                  0,
+                  6
+                )}...${walletAddress.substring(38)}`
                 : " Connect Wallet"}
             </button>
           </div>

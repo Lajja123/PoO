@@ -151,9 +151,15 @@ function CreationCertificate() {
         console.error(error);
       });
 
+    const account = await window.ethereum.request({
+      method: "eth_requestAccounts",
+    });
+
+    var address = account[0];
     const mintNft = new ethers.Contract(Poo_contract_address, Poo.abi, signer);
     const mintNFT = await mintNft.storeCertificate(
-      "0xeB05322B3C154121AA9114C570e393033074E1E2",
+      // "0xeB05322B3C154121AA9114C570e393033074E1E2",
+      address,
       imageUri,
       false
     );
