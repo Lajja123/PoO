@@ -35,7 +35,7 @@ function Registration() {
 
   return (
     <>
-      <div className="HELLO">
+      <div className="poo-registration">
         <div className="p-signup-main-div">
           <div className="logo-register-main">
             <img src={logo} className="logo-register" />
@@ -73,18 +73,6 @@ function Registration() {
                   }}
                 />
               </div>
-              {/* <div className="user-main">
-              <div className="register-icons1">
-                <img src={pass} alt="" className="register-icons2" />
-              </div>
-              <input
-                type="password"
-                id="first_name"
-                class="bg-gray-50 text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 p-register-input p-username"
-                placeholder="Password"
-                required
-              />
-            </div> */}
               <div className="p-button">
                 <button
                   type="button"
