@@ -6,19 +6,20 @@ import pass from "../assests/images/password.svg";
 import logo from "../assests/images/logo1.png";
 import { ethers } from "ethers";
 import Poo from "../artifacts/contracts/Poo.sol/Poo.json";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function Registration() {
   const [userData, setUserData] = useState({ name: "", email: "" });
   const usernameRef = useRef(null);
   const emailRef = useRef(null);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const registerUser = async () => {
     console.log(userData);
     const Poo_contract_address = "0x41abd4773aC12e1C68F8b16669B0fE383944EFB4";
 
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
+    console.log(signer);
 
     const registerUser = new ethers.Contract(
       Poo_contract_address,
@@ -28,8 +29,9 @@ function Registration() {
     const saveUserData = await registerUser.registerUser(
       userData.name,
       userData.email,
+      ""
 
-      navigate("/profile")
+      // navigate("/profile")
     );
 
     usernameRef.current.value = "";

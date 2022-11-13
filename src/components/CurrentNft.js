@@ -25,7 +25,7 @@ function CurrentNft() {
 
     var address = account[0];
 
-    // var address = "0x032FD736A28521e6413AD7efDf45E6918fC48DFd";
+    // var address = "0x6E212f16749300664e70496FDcf6F6e61f9E77E5";
     // console.log(address);
     const walletnft = {
       method: "GET",
@@ -78,9 +78,9 @@ function CurrentNft() {
       for (let j = 0; j < transferNftData[0].result.length; j++) {
         if (
           walletNftData[0].result[i]["token_address"] ===
-          transferNftData[0].result[j]["token_address"] &&
+            transferNftData[0].result[j]["token_address"] &&
           walletNftData[0].result[i].token_id ===
-          transferNftData[0].result[j].token_id
+            transferNftData[0].result[j].token_id
         ) {
           walletNftData[0].result[i] = {
             ...walletNftData[0].result[i],

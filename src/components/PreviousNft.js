@@ -82,7 +82,7 @@ function PreviousNft() {
         for (let j = 0; j < previousTransferNftData.length; j++) {
           if (
             perviousNftData[i]["token_address"] ===
-            previousTransferNftData[j]["token_address"] &&
+              previousTransferNftData[j]["token_address"] &&
             perviousNftData[i].token_id === previousTransferNftData[j].token_id
           ) {
             perviousNftData[i] = {
