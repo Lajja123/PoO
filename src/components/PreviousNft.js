@@ -201,8 +201,8 @@ function PreviousNft() {
                 <option value="bsc testnet">bsc testnet</option>
                 <option value="0x61">0x61</option>
                 <option value="avalanche">avalanche</option>
-                <option value="0xa86a"></option>
-                <option value="avalanche testnet"></option>
+                <option value="0xa86a">0xa86a</option>
+                <option value="avalanche testnet">avalanche testnet</option>
                 <option value="0xa869">0xa869</option>
                 <option value="fantom">fantom</option>
                 <option value="0xfa">0xfa</option>
