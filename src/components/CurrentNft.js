@@ -23,14 +23,14 @@ function CurrentNft() {
     });
     // setWalletAddress(account[0]);
 
-    // var address = account[0];
+    var address = account[0];
 
-    var address = "0x032FD736A28521e6413AD7efDf45E6918fC48DFd";
+    // var address = "0x032FD736A28521e6413AD7efDf45E6918fC48DFd";
     // console.log(address);
     const walletnft = {
       method: "GET",
       url: `https://deep-index.moralis.io/api/v2/${address}/nft`,
-      params: { chain: "polygon", format: "decimal" },
+      params: { chain: "mumbai", format: "decimal" },
       headers: {
         accept: "application/json",
         "X-API-Key":
@@ -50,7 +50,7 @@ function CurrentNft() {
     const walletTransfers = {
       method: "GET",
       url: `https://deep-index.moralis.io/api/v2/${address}/nft/transfers`,
-      params: { chain: "polygon", format: "decimal", direction: "both" },
+      params: { chain: "mumbai", format: "decimal", direction: "both" },
       headers: {
         accept: "application/json",
         "X-API-Key":
@@ -114,9 +114,8 @@ function CurrentNft() {
                   {item.metadata !== null && item.name !== "Web3 Club Tour" ? (
                     <div className="current-certi-main">
                       <div className="curren-certi-img">
-                        <video
-                          src="https://ipfs.io/ipfs/QmatVFcDFH7aUr8nYZs2iDRmSgnsBsaB48FZQUEVoqibx3"
-                          controls
+                        <img
+                          src={item.metadata.image}
                           alt=""
                           className="nfts-img4"
                         />

@@ -68,7 +68,7 @@ function CreationCertificate() {
   }, []);
 
   const downloadImage = async () => {
-    console.log("bhadresh");
+    // console.log("bhadresh");
     const dataUrl = await htmlToImage.toPng(domEl.current);
     var file = dataURLtoFile(dataUrl, "certificate.png");
     console.log(file);
