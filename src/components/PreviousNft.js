@@ -138,6 +138,45 @@ function PreviousNft() {
   return (
     <>
       <div className=" current-nft-div2">
+        <div className="poo-current-nft-block ">
+          <label
+            for="language "
+            className="font-face-gm-aquire-bold drop-down-lbl"
+          >
+            Select Chain:
+          </label>
+          <select
+            name="language"
+            id="language-dropdown "
+            className="font-face-gm-medium language-dropdown "
+          >
+            <option value="select">select</option>
+            <option value="eth">eth</option>
+            <option value="0x1">0x1</option>
+            <option value="goerlli">goerlli</option>
+            <option value="0x5">0x5</option>
+            <option value="sepolia">sepolia</option>
+            <option value="0xaa36a7">0xaa36a7</option>
+            <option value="polygon">polygon</option>
+            <option value="0x89">0x89</option>
+            <option value="mumbai">mumbai</option>
+            <option value="0x13881">0x13881</option>
+            <option value="bsc">bsc</option>
+            <option value="0x38">0x38</option>
+            <option value="bsc testnet">bsc testnet</option>
+            <option value="0x61">0x61</option>
+            <option value="avalanche">avalanche</option>
+            <option value="0xa86a"></option>
+            <option value="avalanche testnet"></option>
+            <option value="0xa869">0xa869</option>
+            <option value="fantom">fantom</option>
+            <option value="0xfa">0xfa</option>
+            <option value="cronos">cronos</option>
+            <option value="0x19">0x19</option>
+            <option value="cronos">cronos testnet</option>
+            <option value="0x152">0x152</option>
+          </select>
+        </div>
         <div className="current-grid-container">
           {previousnftData.map((item, i) => {
             return (

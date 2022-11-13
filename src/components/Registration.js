@@ -6,20 +6,24 @@ import pass from "../assests/images/password.svg";
 import logo from "../assests/images/logo1.png";
 import { ethers } from "ethers";
 import Poo from "../artifacts/contracts/Poo.sol/Poo.json";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import spin from "../assests/images/spinner.gif";
+// import spin2 from "../assests/images/dot.gif";
 
 function Registration() {
+  const [loader, setLoader] = useState(false);
   const [userData, setUserData] = useState({ name: "", email: "" });
   const usernameRef = useRef(null);
   const emailRef = useRef(null);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const registerUser = async () => {
+    setLoader(true);
     console.log(userData);
     const Poo_contract_address = "0x41abd4773aC12e1C68F8b16669B0fE383944EFB4";
 
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();
-    console.log(signer);
+    // console.log(signer);
 
     const registerUser = new ethers.Contract(
       Poo_contract_address,
@@ -30,16 +34,15 @@ function Registration() {
       userData.name,
       userData.email,
       ""
-
-      // navigate("/profile")
     );
-
+    navigate("/profile");
     usernameRef.current.value = "";
     emailRef.current.value = "";
 
     // console.log(saveUserData);
     const fetchdata = await registerUser.getUser();
     console.log(fetchdata);
+    setLoader(false);
   };
 
   return (
@@ -90,7 +93,16 @@ function Registration() {
                   class="py-2.5 px-5 mr-2 mb-2 text-sm font-medium  rounded-full border signup-btn font-face-gm-aquire-bold"
                   onClick={() => registerUser()}
                 >
-                  REGISTER
+                  {loader ? (
+                    <img
+                      src={spin}
+                      height="100"
+                      width="40"
+                      className="spinner2-mint"
+                    />
+                  ) : (
+                    " REGISTER"
+                  )}
                 </button>
               </div>
               <div class="mb-6"></div>
