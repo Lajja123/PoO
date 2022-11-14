@@ -6,12 +6,14 @@ import { Link } from "react-router-dom";
 import { ethers } from "ethers";
 
 function OwnershipCertificate() {
+  const [loading, setLoading] = useState(false);
   const Poo_contract_address = "0x41abd4773aC12e1C68F8b16669B0fE383944EFB4";
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   const signer = provider.getSigner();
   const [certificateData, setCertificateData] = useState([]);
 
   const fetchCertificate = async (e) => {
+    setLoading(true);
     const account = await window.ethereum.request({
       method: "eth_requestAccounts",
     });
@@ -24,6 +26,7 @@ function OwnershipCertificate() {
     );
     console.log(certificates);
     setCertificateData(certificates);
+    setLoading(false);
   };
   useEffect(() => {
     fetchCertificate();
@@ -31,28 +34,48 @@ function OwnershipCertificate() {
   return (
     <>
       <div className="ownership-grid-container">
-        {certificateData.map((item, i) => {
-          return (
-            <>
-              {" "}
-              <div className="ownrship-certi-main">
-                <div key={i} className="z-index-main-div">
-                  <div className="nft-main-div">
-                    <img className="nft-main-img" src={item.tokenIpfsUri}></img>
+        {loading ? (
+          <div class="center">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+        ) : (
+          <>
+            {certificateData.map((item, i) => {
+              return (
+                <>
+                  {" "}
+                  <div className="ownrship-certi-main">
+                    <div key={i} className="z-index-main-div">
+                      <div className="nft-main-div">
+                        <img
+                          className="nft-main-img"
+                          src={item.tokenIpfsUri}
+                        ></img>
+                      </div>
+                      <div className="p-btn-main ">
+                        <Link to={"/singlecertificate"} state={{ data: item }}>
+                          {/* <Link to={"/createcertificate"} state={{ data: item }}> */}
+                          <button className="ownership-btn  font-face-gm-aquire-bold ">
+                            Share Certificate
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
                   </div>
-                  <div className="p-btn-main ">
-                    <Link to={"/singlecertificate"} state={{ data: item }}>
-                      {/* <Link to={"/createcertificate"} state={{ data: item }}> */}
-                      <button className="ownership-btn  font-face-gm-aquire-bold ">
-                        Share Certificate
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </>
-          );
-        })}
+                </>
+              );
+            })}
+          </>
+        )}
       </div>
     </>
   );
