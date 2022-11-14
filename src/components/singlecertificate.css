@@ -85,7 +85,7 @@
 .singlecertificate-nfts-img5 {
   width: 50%;
 
-  padding: 40px 30px;
+  padding: 40px 10px;
   border-radius: 100px;
 }
 .p-section2-certificate {
@@ -128,8 +128,6 @@
 .pop-main-info {
   background-color: #fad39a;
   box-shadow: 3.9661px 0px 41.0636px -4px rgb(0 0 0 / 41%);
-  /* width: 25%;
-  position: absolute; */
   top: 32vw;
   height: auto;
   border-radius: 10px;
@@ -255,7 +253,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   /* margin-left: 20%; */
-  text-align: center;
+  /* text-align: center; */
 }
 .p-certi-content11 {
   display: flex;
@@ -265,12 +263,6 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   font-size: 1rem;
-  /* font-size: 1rem;
-  align-items: center;
-  justify-content: space-around;
-  color: white;
-  font-weight: 700;
-  text-transform: uppercase; */
 }
 .p-certi-content12 {
   display: flex;
@@ -278,7 +270,6 @@
   align-items: center;
   justify-content: space-around;
   color: white;
-
   text-transform: uppercase;
 }
 .owner-period2 {
@@ -296,18 +287,14 @@
 .owner-period3 {
   font-size: 1rem;
 }
-/* .certificate-main {
-  margin-left: 50px;
-} */
 .spinner-mint {
   margin-left: 60px;
 }
 
-/* ///new responsive */
+/*....................new responsive ...........................*/
 @media screen and (max-width: 1024px) {
   .cetificate-name {
     width: 70%;
-
     margin-left: 16vw;
   }
   .certificate-main {

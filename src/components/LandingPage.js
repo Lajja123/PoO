@@ -266,7 +266,7 @@ function LandingPage() {
         <div className="add-chain-main">
           <div className="add-chain-box ">
             <p className="add-chain-message font-face-gm">
-              please switch to BTTC network
+              please switch to Polygon mumbai network
             </p>
 
             <button
