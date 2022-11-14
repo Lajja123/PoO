@@ -35,143 +35,71 @@ function LandingPage() {
   const Poo_contract_address = "0x41abd4773aC12e1C68F8b16669B0fE383944EFB4";
   const provider = new ethers.providers.Web3Provider(window.ethereum);
   const signer = provider.getSigner();
+  const [popup, setPopup] = useState(false);
   // console.log(signer);
 
   useEffect(() => {
     // getCurrentWalletConnected();
     // addWalleteListener();
   }, []);
+
+  const changeNetwork = async () => {
+    console.log("oulalal, switch to the correct network");
+    try {
+      await window.ethereum.request({
+        method: "wallet_switchEthereumChain",
+        params: [{ chainId: "0x13881" }],
+      });
+      console.log("You have switched to the right network");
+    } catch (switchError) {
+      // The network has not been added to MetaMask
+      if (switchError.code === 4902) {
+        console.log("this chainId does not exist");
+      }
+      console.log("Cannot switch to the network");
+    }
+  };
+
   const connectWallet = async () => {
-    // try {
-    //   const { ethereum } = window;
-
-    //   if (ethereum) {
-    //     const provider = new ethers.providers.Web3Provider(ethereum);
-    //     const signer = provider.getSigner();
-    //     if (!provider) {
-    //       console.log("Metamask is not installed, please install!");
-    //     }
-
-    //     const { chainId } = await provider.getNetwork();
-    //     console.log(chainId);
-    //     const polygon_chainId = "0x13881"; //Its in HEX of 647426021
-    //     if (chainId == polygon_chainId) {
-    //       console.log("Bravo!, you are on the correct network");
-    //     } else {
-    //       console.log("oulalal, switch to the correct network");
-    //       try {
-    //         await window.ethereum.request({
-    //           method: "wallet_switchEthereumChain",
-    //           params: [{ chainId: "0x13881" }],
-    //         });
-    //         // const fetchdata = await userDetails.getUser();
-    //         // console.log(fetchdata);
-    //         // if (fetchdata.email === "") {
-    //         //   navigate("/register");
-    //         // } else {
-    //         //   navigate("/profile");
-    //         // }
-    //         // console.log(account[0]);
-    //         console.log("You have switched to the right network");
-    //       } catch (switchError) {
-    //         // The network has not been added to MetaMask
-    //         if (switchError.code === 4902) {
-    //           console.log("this chainId does not exist");
-    //         }
-    //         console.log("Cannot switch to the network");
-    //       }
-    //     }
-    //   } else {
-    //     console.log("Ethereum object doesn't exist!");
-    //   }
-    // } catch (error) {
-    //   console.log(error);
-    // }
-
-    // const { ethereum } = window;
-    // if (ethereum) {
-    //   const provider = new ethers.providers.Web3Provider(ethereum);
-    //   const signer = provider.getSigner();
-    //   if (!provider) {
-    //     console.log("Metamask is not installed, please install!");
-    //   }
-    //   //adding Polygon MUMBAI TESTNET NETWORK TO METAMASK
-    //   //IF AVAILABLE then just SWITCH network (done automatically by metamask)
-    //   try {
-    //     await window.ethereum.request({
-    //       method: "wallet_addEthereumChain",
-    //       params: [
-    //         {
-    //           chainId: "0x13881", //338
-    //           chainName: "Polygon Mumbai Testnet",
-    //           rpcUrls: ["https://rpc-mumbai.maticvigil.com"],
-    //           blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
-    //           nativeCurrency: {
-    //             symbol: "MATIC",
-    //             decimals: 18,
-    //           },
-    //         },
-    //       ],
-    //     });
-    //   } catch (err) {
-    //     console.log(err);
-    //   }
-    // } else {
-    //   console.log("Ethereum object doesn't exist!");
-    // }
-
+    const rider = new ethers.providers.Web3Provider(window.ethereum);
+    const signer = rider.getSigner();
     if (typeof window != "undefined" && window.ethereum != "undefined") {
       try {
         const account = await window.ethereum.request({
           method: "eth_requestAccounts",
         });
-        setWalletAddress(account[0]);
-        // UserProfile.setName(account[0]);
+
         console.log(walletAddress);
         console.log(account[0]);
-        // console.log(Cookies.get("wallet_address"));
-        // console.log(UserProfile.getName());
 
-        const { chainId } = await provider.getNetwork();
+        const { chainId } = await rider.getNetwork();
         console.log(chainId);
         const polygon_chainId = "0x13881"; //Its in HEX of 647426021
         if (chainId == polygon_chainId) {
-          console.log("Bravo!, you are on the correct network");
-        } else {
-          console.log("oulalal, switch to the correct network");
-          try {
-            await window.ethereum.request({
-              method: "wallet_switchEthereumChain",
-              params: [{ chainId: "0x13881" }],
-            });
-            console.log("You have switched to the right network");
-          } catch (switchError) {
-            // The network has not been added to MetaMask
-            if (switchError.code === 4902) {
-              console.log("this chainId does not exist");
-            }
-            console.log("Cannot switch to the network");
+          setWalletAddress(account[0]);
+          const userDetails = new ethers.Contract(
+            Poo_contract_address,
+            Poo.abi,
+            signer
+          );
+          const fetchdata = await userDetails.getUser();
+          console.log(fetchdata);
+          if (fetchdata.email === "") {
+            navigate("/register");
+          } else {
+            navigate("/profile");
           }
-        }
-
-        const userDetails = new ethers.Contract(
-          Poo_contract_address,
-          Poo.abi,
-          signer
-        );
-        const fetchdata = await userDetails.getUser();
-        console.log(fetchdata);
-        if (fetchdata.email === "") {
-          navigate("/register");
+          console.log(account[0]);
+          // console.log("Bravo!, you are on the correct network");
         } else {
-          navigate("/profile");
+          console.log("hello");
+          setPopup(true);
         }
-        console.log(account[0]);
       } catch (err) {
         console.error(err.message);
       }
     } else {
-      console.log("Please Install Metamast");
+      console.log("Please Install Metamask");
     }
   };
 
@@ -191,7 +119,7 @@ function LandingPage() {
         console.error(err.message);
       }
     } else {
-      alert("Please Install Metamast");
+      alert("Please Install Metamask");
     }
   };
 
@@ -203,7 +131,7 @@ function LandingPage() {
       });
     } else {
       setWalletAddress("");
-      console.log("Please Install Metamast");
+      console.log("Please Install Metamask");
     }
   };
   return (
@@ -334,6 +262,22 @@ function LandingPage() {
           <h3>Copyright © 2022 PoO. All Rights Reserved</h3>
         </div>
       </section>
+      {popup ? (
+        <div className="add-chain-main">
+          <div className="add-chain-box ">
+            <p className="add-chain-message font-face-gm">
+              please switch to BTTC network
+            </p>
+
+            <button
+              className="bttc-btn font-face-gm-aqiure"
+              onClick={() => changeNetwork()}
+            >
+              change network
+            </button>
+          </div>
+        </div>
+      ) : null}
     </>
   );
 }
