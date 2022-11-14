@@ -12,7 +12,6 @@ function OwnershipCertificate() {
   const [certificateData, setCertificateData] = useState([]);
 
   const fetchCertificate = async (e) => {
-
     const account = await window.ethereum.request({
       method: "eth_requestAccounts",
     });
@@ -39,7 +38,7 @@ function OwnershipCertificate() {
               <div className="ownrship-certi-main">
                 <div key={i} className="z-index-main-div">
                   <div className="nft-main-div">
-                    <img src={item.tokenIpfsUri}></img>
+                    <img className="nft-main-img" src={item.tokenIpfsUri}></img>
                   </div>
                   <div className="p-btn-main ">
                     <Link to={"/singlecertificate"} state={{ data: item }}>

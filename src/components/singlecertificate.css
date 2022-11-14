@@ -54,13 +54,14 @@
   margin-left: 25%;
   text-align: left;
   font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .p-single-certificate-ownership {
   display: flex;
   margin: 0 auto;
   width: 50%;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   border-radius: 50px;
   background-color: #00566a;
   /* padding-bottom: 30px; */
@@ -289,6 +290,9 @@
 }
 .spinner-mint {
   margin-left: 60px;
+}
+.verify-by {
+  margin-left: 10px;
 }
 
 /*....................new responsive ...........................*/
