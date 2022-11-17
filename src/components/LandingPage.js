@@ -265,6 +265,12 @@ function LandingPage() {
       {popup ? (
         <div className="add-chain-main">
           <div className="add-chain-box ">
+            <span
+              className="close-icon-network"
+              onClick={() => setPopup(false)}
+            >
+              x
+            </span>
             <p className="add-chain-message font-face-gm">
               please switch to Polygon mumbai network
             </p>

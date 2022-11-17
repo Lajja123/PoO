@@ -381,6 +381,22 @@
   font-size: 1.5rem;
   color: white;
 }
+.close-icon-network {
+  content: "x";
+  cursor: pointer;
+  position: fixed;
+  right: calc(40% - 55px);
+  top: calc(100vh - 65vh - 50px);
+  background: #00566a;
+  color: #fff;
+  width: 25px;
+  height: 27px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 25px;
+}
 @media screen and (max-width: 1024px) {
   .p-top1-waves {
     width: 100%;

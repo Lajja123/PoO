@@ -152,19 +152,19 @@ select.language-dropdown {
 
 /* .............res................. */
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .current-button {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   .current-grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 30px 50px;
     padding: 70px 100px 50px;
   }
   .poo-current-nft-block {
-    padding-top: 13%;
-    margin-right: 60vw;
+    padding-top: 10%;
+    /* margin-right: 30vw; */
     display: inline-block;
     position: relative;
   }
@@ -178,7 +178,7 @@ select.language-dropdown {
     font-weight: 600;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .current-grid-container {
     display: grid;
     grid-template-columns: auto auto;

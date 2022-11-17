@@ -169,7 +169,7 @@ function CreationCertificate() {
     );
     console.log(mintNFT);
     setLoader(false);
-    navigator("/ownershipcertificate");
+    navigate("/ownershipcertificate");
   };
 
   return (

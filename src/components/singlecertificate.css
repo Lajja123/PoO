@@ -46,7 +46,7 @@
   left: 45%;
 }
 .cetificate-name {
-  margin-right: 70%;
+  margin-right: 50%;
   color: white;
   border-bottom: 2px solid white;
   width: 50%;
@@ -69,7 +69,7 @@
 .p-signle-certificate-content {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0 20px;
   width: 100%;
   height: 75%;
@@ -309,7 +309,7 @@
     padding: 0;
   }
   .p-single-certificate-ownership {
-    width: 70%;
+    width: 60%;
   }
   .p-certificate {
     font-size: 2rem;
@@ -328,6 +328,9 @@
     padding: 6px;
     width: 65%;
   }
+  .p-certi-content12 {
+    font-size: 1rem;
+  }
   .own-verify {
     width: 5vw;
     margin-right: 30px;
@@ -335,14 +338,22 @@
   .p-owner-name {
     font-size: 1.5rem;
   }
+  .verify-by {
+    margin-left: 20px;
+  }
+  .own-verify {
+    width: 5vw;
+    margin-left: 100px;
+  }
 }
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .creation-nft-details {
     font-size: 1rem;
   }
   .nft-name {
-    margin-top: 30px;
+    /* padding-top: 20px; */
     font-size: 1.5rem;
+    border-bottom: 1px solid white;
   }
   .creation-certi-info {
     margin-top: 0px;
@@ -352,5 +363,31 @@
     width: 64%;
     margin-left: 16vw;
     font-size: 1.5rem;
+  }
+  .p-owner-name {
+    font-size: 1rem;
+  }
+  .p-certi-content10 {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  .p-certi-content11 {
+    font-size: 0.7rem;
+  }
+  .owner-period1 {
+    font-size: 0.7rem;
+  }
+  .owner-period2 {
+    font-size: 0.7rem;
+    margin-bottom: 0px;
+  }
+  .verify-by {
+    margin-right: 10px;
+  }
+  .create-certi-div2 {
+    padding-top: 15%;
+  }
+  .singlecertificate-nfts-image {
+    height: 200px;
   }
 }
