@@ -32,7 +32,7 @@ function PreviousNft() {
     });
 
     var address = account[0];
-    // var address = "0xF50699109cA8AdB470dC8430Dbc36Cd7622D022f";
+    // var address = "0x7b86cEeE7eFF80693F4B2a98dA209eff29531D50";
     const options = {
       method: "GET",
       url: `https://deep-index.moralis.io/api/v2/${address}/nft/transfers`,
@@ -56,16 +56,19 @@ function PreviousNft() {
         console.log(response.data.result);
         perviousNftData = response.data.result;
         console.log(perviousNftData);
+        setLoading(false);
       })
       .catch(function (error) {
         console.error(error);
+        setLoading(false);
       });
 
     perviousNftData[0] = { ...perviousNftData[0], chain: chain };
 
     getFinalNftData();
-    setLoading(false);
+
     async function getFinalNftData() {
+      setLoading(true);
       console.log(perviousNftData);
 
       // for adding the meta data
@@ -96,9 +99,11 @@ function PreviousNft() {
             };
 
             console.log(perviousNftData);
+            setLoading(false);
           })
           .catch(function (error) {
             console.error(error);
+            setLoading(false);
           });
       }
       for (let i = 0; i < perviousNftData.length; i++) {
@@ -110,10 +115,12 @@ function PreviousNft() {
       setPreviousNftData(perviousNftData);
     }
   };
+
   function onChangeValue(e) {
     fetchpreviousNft(e);
     console.log(e);
   }
+
   return (
     <>
       <div className=" current-nft-div2">
@@ -174,6 +181,7 @@ function PreviousNft() {
                 <option value="0x152">0x152</option>
               </select>
             </div>
+
             <div className="current-grid-container">
               {previousnftData.map((item, i) => {
                 if (item.chain !== undefined) {
