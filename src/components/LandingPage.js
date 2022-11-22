@@ -1,8 +1,6 @@
 import React from "react";
 import Cookies from "universal-cookie";
-
 // import UserProfile from './userProfile';
-
 import bigbg from "../assests/images/background.svg";
 import topwave from "../assests/images/top-waves.svg";
 import "../components/landingpage.css";

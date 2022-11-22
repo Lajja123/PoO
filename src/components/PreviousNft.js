@@ -63,7 +63,9 @@ function PreviousNft() {
         setLoading(false);
       });
 
-    perviousNftData[0] = { ...perviousNftData[0], chain: chain };
+    if (previousnftData.length > 0) {
+      perviousNftData[0] = { ...perviousNftData[0], chain: chain };
+    }
 
     getFinalNftData();
 
@@ -113,6 +115,7 @@ function PreviousNft() {
 
       console.log(perviousNftData);
       setPreviousNftData(perviousNftData);
+      setLoading(false);
     }
   };
 
