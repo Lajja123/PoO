@@ -51,8 +51,8 @@ function CreationCertificate() {
       method: "eth_requestAccounts",
     });
 
-    var address = account[0];
-    // var address = "0xF50699109cA8AdB470dC8430Dbc36Cd7622D022f";
+    // var address = account[0];
+    var address = "0x7b86cEeE7eFF80693F4B2a98dA209eff29531D50";
 
     let token_address = datas.token_address;
     let token_id = datas.token_id;

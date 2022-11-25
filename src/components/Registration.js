@@ -36,7 +36,6 @@ function Registration() {
       ""
     );
 
-    // navigate("/profile");
     usernameRef.current.value = "";
     emailRef.current.value = "";
 
@@ -44,6 +43,7 @@ function Registration() {
     const fetchdata = await registerUser.getUser();
     console.log(fetchdata);
     setLoader(false);
+    navigate("/profile");
   };
 
   return (

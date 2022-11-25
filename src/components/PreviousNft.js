@@ -22,7 +22,7 @@ function PreviousNft() {
   useEffect(() => {
     if (dataFetchedRef.current) return;
     dataFetchedRef.current = true;
-    fetchpreviousNft();
+    // fetchpreviousNft();
   }, []);
 
   const fetchpreviousNft = async (chain) => {
@@ -31,8 +31,8 @@ function PreviousNft() {
       method: "eth_requestAccounts",
     });
 
-    var address = account[0];
-    // var address = "0x7b86cEeE7eFF80693F4B2a98dA209eff29531D50";
+    // var address = account[0];
+    var address = "0x7b86cEeE7eFF80693F4B2a98dA209eff29531D50";
     const options = {
       method: "GET",
       url: `https://deep-index.moralis.io/api/v2/${address}/nft/transfers`,
@@ -56,11 +56,9 @@ function PreviousNft() {
         console.log(response.data.result);
         perviousNftData = response.data.result;
         console.log(perviousNftData);
-        setLoading(false);
       })
       .catch(function (error) {
         console.error(error);
-        setLoading(false);
       });
 
     if (previousnftData.length > 0) {
@@ -101,12 +99,8 @@ function PreviousNft() {
             };
 
             console.log(perviousNftData);
-            setLoading(false);
           })
-          .catch(function (error) {
-            console.error(error);
-            setLoading(false);
-          });
+          .catch(function (error) {});
       }
       for (let i = 0; i < perviousNftData.length; i++) {
         // console.log(perviousNftData[i].metadata);
@@ -120,8 +114,10 @@ function PreviousNft() {
   };
 
   function onChangeValue(e) {
+    setLoading(true);
     fetchpreviousNft(e);
     console.log(e);
+    setLoading(false);
   }
 
   return (
