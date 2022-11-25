@@ -88,7 +88,7 @@ function LandingPage() {
           if (fetchdata.email === "") {
             navigate("/register");
           } else {
-            navigate("/profile");
+            navigate("/currentnft");
           }
           console.log(account[0]);
           // console.log("Bravo!, you are on the correct network");

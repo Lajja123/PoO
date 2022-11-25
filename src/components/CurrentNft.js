@@ -60,8 +60,6 @@ function CurrentNft() {
 
     walletNftData[0] = { ...walletNftData[0], chain: chain };
     getFinalNftData();
-
-    setLoading(false);
   };
 
   function getFinalNftData() {
@@ -80,6 +78,7 @@ function CurrentNft() {
 
     console.log(walletNftData);
     setNftData(walletNftData);
+    setLoading(false);
   }
   function onChangeValue(e) {
     fetchCurrentNft(e);
