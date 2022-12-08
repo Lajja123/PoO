@@ -113,7 +113,7 @@ function CurrentNft() {
               <select
                 name="language"
                 id="language-dropdown "
-                className="font-face-gm-medium language-dropdown "
+                className="font-face-gm-aquire-bold language-dropdown "
                 onChange={(e) => {
                   onChangeValue(e.target.value);
                 }}
