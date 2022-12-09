@@ -465,6 +465,9 @@
     transform: scale(0);
   }
 }
+/* ...............Responsive design.......... */
+@media only screen and (max-width: 1440px) {}
+
 @media screen and (max-width: 1024px) {
   .p-top1-waves {
     width: 100%;
@@ -609,7 +612,7 @@
     position: relative;
   }
 }
-@media only screen and (max-width: 486px) {
+@media only screen and (max-width: 497px) {
   .logo-register {
     width: 25%;
     position: relative;
@@ -617,37 +620,37 @@
   }
   .p-connect-btn {
     margin: 5px;
-    padding: 5px;
-    font-size: 6px;
+    padding: 7px;
+    font-size: 10px;
     width: 25%;
-    height: 16px;
+    height: 25px;
   }
 
   .p-circle4-svg {
-    width: 3em;
+    width: 4em;
     position: absolute;
-    bottom: 22vw;
-    right: 17vw;
+    bottom: 20vw;
+    right: 20vw;
     transform: rotate(140deg);
   }
 
   .certi-heading {
     width: 70%;
     margin-left: 15%;
-    font-size: 0.5rem;
+    font-size: 0.9rem;
   }
 
   .p-nft-content {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
   .p-circle2-svg {
-    margin-top: 33px;
+    margin-top: 30px;
   }
   .p-circle1-svg {
-    margin-top: -40vw;
+    margin-top: -35vw;
   }
   .p-circle3-svg {
-    bottom: 26vw;
+    bottom: 20vw;
     left: 26vw;
   }
   .certi-title {
@@ -657,7 +660,7 @@
     width: 40%;
     color: #ffff;
     right: 23vw;
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     word-spacing: 5px;
     letter-spacing: 2px;
     /* line-height: 60px; */
@@ -677,7 +680,7 @@
     margin-top: -28%;
   }
   .ownership-periods {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   .p-certi-content {
     font-size: 0.5rem;
@@ -689,7 +692,7 @@
     position: absolute;
     /* top: 305%; */
     left: 45vw;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     justify-content: space-around;
     width: 30%;
     /* margin-top: -10%; */
@@ -702,7 +705,7 @@
     margin-top: 20px;
   }
   .landigpage-footer {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
   }
   .logo-landingpage-main {
     left: 5vw;
