@@ -3,12 +3,7 @@ import "../components/currentnft.css";
 import axios from "axios";
 // import dnft from "../assests/images/dummynft.png";
 import { Link } from "react-router-dom";
-import nft1 from "../assests/images/nft1.webp";
-import nft2 from "../assests/images/nft2.jpg";
 // import nft3 from "../assests/images/nft3.jpg";
-import nft4 from "../assests/images/nft4.jpeg";
-import nft5 from "../assests/images/nft5.webp";
-import nft6 from "../assests/images/nft6.jpeg";
 
 function PreviousNft() {
   const [loading, setLoading] = useState(false);
