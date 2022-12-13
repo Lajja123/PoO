@@ -391,3 +391,137 @@
     height: 200px;
   }
 }
+
+@media screen and (max-width: 497px) {
+  .creation-nft-details {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+  }
+  .nft-name {
+    /* padding-top: 20px; */
+    font-size: 0.8rem;
+    border-bottom: 1px solid white;
+  }
+  .creation-certi-info {
+    margin-top: 0px;
+    font-size: 0.8rem;
+  }
+  .cetificate-name {
+    width: 64%;
+    margin-left: 16vw;
+    font-size: 0.8rem;
+  }
+  .p-owner-name {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  .p-certi-content10 {
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+  }
+  .p-certi-content11 {
+    font-size: 0.5rem;
+  }
+  .owner-period1 {
+    font-size: 0.5rem;
+  }
+  .owner-period2 {
+    font-size: 0.5rem;
+    margin-bottom: 0px;
+  }
+  .verify-by {
+    margin-right: 10px;
+  }
+  .create-certi-div2 {
+    padding-top: 15%;
+  }
+  .singlecertificate-nfts-image {
+    /* height: 140px; */
+    height: auto;
+    width: 50%;
+  }
+  .input-main {
+    font-size: 0.8rem;
+  }
+  .creation-certi-info {
+    position: relative;
+    margin: 0 auto;
+    margin-left: 20px;
+    text-align: justify;
+    /* margin-top: 50px; */
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+  .p-certificate {
+    font-size: 0.9rem;
+  }
+  .p-owner-title {
+    font-size: 0.7rem;
+  }
+  .owner-period3 {
+    font-size: 0.5rem;
+  }
+  .p-certi-content12 {
+    font-size: 0.7rem;
+  }
+  .p-certi-content10 {
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+  .singlecertificate-nfts-img5 {
+    width: 40%;
+    padding: 40px 10px;
+    border-radius: 30px;
+  }
+  .p-single-certificate-ownership {
+    width: 71%;
+    border-radius: 25px;
+  }
+  .certificate-date-icon {
+    width: 20%;
+    position: absolute;
+    margin-top: 8px;
+    margin-left: 5px;
+  }
+  .date-input1 {
+    padding-left: 20px;
+    text-indent: 19px;
+    color: gray;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .p-mint-nft {
+    width: 7rem;
+    font-size: 0.8rem;
+  }
+  .cetificate-name {
+    margin-right: 50%;
+    color: white;
+    border-bottom: 2px solid white;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 25%;
+    text-align: left;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+  }
+  .p-mint-nft {
+    background-color: #f16386;
+    color: white;
+    width: 7rem;
+    letter-spacing: 2px;
+    height: 3rem;
+    border-radius: 10px;
+    margin-top: 21px;
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .singlecertificate-nfts-img4 {
+    padding: 10px;
+  }
+  .spinner-mint {
+    margin-left: 37px;
+  }
+}

@@ -466,7 +466,8 @@
   }
 }
 /* ...............Responsive design.......... */
-@media only screen and (max-width: 1440px) {}
+@media only screen and (max-width: 1440px) {
+}
 
 @media screen and (max-width: 1024px) {
   .p-top1-waves {
@@ -622,7 +623,7 @@
     margin: 3px;
     padding: 7px;
     font-size: 10px;
-    width: 25%;
+    width: 30%;
     height: 25px;
   }
 
@@ -712,6 +713,19 @@
     position: absolute;
     width: 95%;
     z-index: 1;
+  }
+  .add-chain-box {
+    width: 100%;
+    left: 0;
+  }
+  .add-chain-message {
+    font-size: 1rem;
+  }
+  .close-icon-network {
+    right: calc(35% - 55px);
+  }
+  .bttc-btn {
+    font-size: 0.6rem;
   }
 }
 @media only screen and (max-width: 375px) {
