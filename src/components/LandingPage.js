@@ -1,5 +1,23 @@
 import React from "react";
 import Cookies from "universal-cookie";
+
+//wallet assets
+// import "@rainbow-me/rainbowkit/styles.css";
+// import { ConnectButton } from "@rainbow-me/rainbowkit";
+// import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+
+// import { configureChains, createClient, goerli, WagmiConfig } from "wagmi";
+// import {
+//   mainnet,
+//   polygon,
+//   optimism,
+//   arbitrum,
+//   polygonMumbai,
+// } from "wagmi/chains";
+// import { alchemyProvider } from "wagmi/providers/alchemy";
+// import { publicProvider } from "wagmi/providers/public";
+//-------------------------------------------//
+
 // import UserProfile from './userProfile';
 import bigbg from "../assests/images/background.svg";
 import topwave from "../assests/images/top-waves.svg";
@@ -43,6 +61,26 @@ function LandingPage() {
       setLoading(false);
     }, 3000);
   }, []);
+
+  //wallet connect
+
+  // const connectwlt = async () => {
+  //   const { chains, provider } = configureChains(
+  //     [polygonMumbai, goerli],
+  //     [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
+  //   );
+
+  //   const { connectors } = getDefaultWallets({
+  //     appName: "My RainbowKit App",
+  //     chains,
+  //   });
+
+  //   const wagmiClient = createClient({
+  //     autoConnect: true,
+  //     connectors,
+  //     provider,
+  //   });
+  // };
 
   const changeNetwork = async () => {
     console.log("oulalal, switch to the correct network");
